@@ -1,0 +1,89 @@
+\documentclass{ieeeaccess}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+
+\usepackage{bm}
+\makeatletter
+\AtBeginDocument{\DeclareMathVersion{bold}
+\SetSymbolFont{operators}{bold}{T1}{times}{b}{n}
+\SetSymbolFont{NewLetters}{bold}{T1}{times}{b}{it}
+\SetMathAlphabet{\mathrm}{bold}{T1}{times}{b}{n}
+\SetMathAlphabet{\mathit}{bold}{T1}{times}{b}{it}
+\SetMathAlphabet{\mathbf}{bold}{T1}{times}{b}{n}
+\SetMathAlphabet{\mathtt}{bold}{OT1}{pcr}{b}{n}
+\SetSymbolFont{symbols}{bold}{OMS}{cmsy}{b}{n}
+\renewcommand\boldmath{\@nomath\boldmath\mathversion{bold}}}
+\makeatother
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+%Your document starts from here ___________________________________________________
+\begin{document}
+% \history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
+% \doi{10.1109/ACCESS.2024.0429000}
+
+\title{Calibration of Odometry Systems in Robotic Vehicles}
+\author{\uppercase{Bruno Silva}\authorrefmark{1},Msc. Student}
+
+\address[1]{Department of Electronics, Telecommunications, and Informatics, University of Aveiro}
+% \address[2]{Department of Physics, Colorado State University, Fort Collins,
+% CO 80523 USA (e-mail: author@lamar.colostate.edu)}
+% \address[3]{Electrical Engineering Department, University of Colorado, Boulder, CO
+% 80309 USA}
+
+% \markboth
+% {Author \headeretal: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS}
+% {Author \headeretal: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS}
+
+
+\begin{abstract}
+Accurate odometry is essential for autonomous navigation in robotic vehicles. Traditional encoder odometry and
+visual odometry are commonly used methods, each with distinct advantages and limitations. Encoder odometry,
+relying on wheel rotations, often suffers from cumulative errors and slippage. Visual odometry, which uses
+camera images to estimate movement, can be affected by environmental factors such as lighting and texture.
+This dissertation aims to fill a gap in the current state of the art by developing a novel methodology to calibrate
+robotic systems with erroneous odometry data. Building on the \textit{Atomic Transformations Optimization Method
+(ATOM)} developed by the \textit{Laboratório de Automação e Robótica} at the \textit{University of Aveiro}, this work proposes
+enhancements to accommodate and correct odometry inaccuracies, by estimating the transformations provided by
+these systems.
+\textit{ATOM} approaches the calibration problem as an extended optimization task, estimating the poses of both sensors
+and calibration patterns through a combination of indivisible geometric transformations, referred to as atomic
+transformations. Unlike pairwise calibration methods, ATOM employs a sensor-to-pattern paradigm, which
+significantly reduces the need for numerous error functions for each sensor pair, thereby generalizing the
+calibration process and making it applicable to a wide variety of robotic systems.
+The methodology is validated through extensive experiments on both a simulated robot (\textit{SOFTBOT}) and a real
+robot (\textit{ZAU}). The simulation results demonstrated significant improvements in calibration accuracy, confirming the efficacy of the proposed approach under controlled conditions. However, real-world
+experiments with \textit{ZAU} revealed challenges due to unexpectedly large odometry errors, which lead to the
+incapability of calibrating the system. Despite these challenges, the findings contribute to advancing the field of robotic
+vehicles odometry
+calibration, providing a reliable approach for enhancing the performance of autonomous robotic systems.
+\end{abstract}
+
+\begin{keywords}
+Enter key words or phrases in alphabetical
+order, separated by commas. Autocorrelation, beamforming, communications technology, dictionary learning, feedback, fMRI, mmWave, multipath, system design, multipath, slight fault, underlubrication fault.
+\end{keywords}
+
+\titlepgskip=-21pt
+
+\maketitle
+
+\section{Introduction}
+\label{sec:introduction}
+\PARstart{T}{his} document is a template for \LaTeX. If you are reading a paper or PDF version of this document, please download the LaTeX template or the MS Word
+template of your preferred publication from the IEEE Website at \underline
+{https://template-selector.ieee.org/secure/templateSelec}\break\underline{tor/publicationType} so you can use it to prepare your manuscript. 
+If you would prefer to use LaTeX, download IEEE's LaTeX style and sample files
+from the same Web page. You can also explore using the Overleaf editor at
+\underline
+{https://www.overleaf.com/blog/278-how-to-use-overleaf-}\break\underline{with-ieee-collabratec-your-quick-guide-to-getting-started}\break\underline{\#.xsVp6tpPkrKM9}
+
+IEEE will do the final formatting of your paper. If your paper is intended
+for a conference, please observe the conference page limits.
+
+\EOD
+\end{document}
