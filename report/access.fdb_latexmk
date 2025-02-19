@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739752939.92567 "access.tex" "access.pdf" "access" 1739752940.54139 0
+["pdflatex"] 1739991157.11161 "access.tex" "access.pdf" "access" 1739991157.74379 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1736268207 2172 fd0c924230362ff848a33632ed45dc23 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm" 1736268207 2228 e564491c42a4540b5ebb710a75ff306c ""
@@ -96,9 +96,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1736353141.77009 5318467 8236939515598d005dfbcc2e1a40f206 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1736353128 7113684 24004b9ea03e3ef9e3fa27a679fe6cad ""
   "IEEEtran.cls" 1738753265.81115 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "access.aux" 1739752940.46876 663 66b5d00b953e3dfb7b4929cdb859679c "pdflatex"
-  "access.out" 1739752940.47209 405 bcc0d112a541202f74331baaa142a6cf "pdflatex"
-  "access.tex" 1739752939.01543 6877 3c2997135744ae64318e134c4c4a4bd6 ""
+  "access.aux" 1739991157.66024 1410 d5fcf4fd8f15b3cd3db52d8ac94b85e5 "pdflatex"
+  "access.out" 1739991157.66024 1551 e1cded4c00d360027622c19bf4f7f66b "pdflatex"
+  "access.tex" 1739991152.2169 9135 d3b0b9dac394e38f4a30428a4355792e ""
   "branco.png" 1738753265.81115 214 a0be336dd6aad5b5f963f994a3a3b409 ""
   "bullet.png" 1738753265.81115 430 e52d8fe748259de33fa611fdd6a099c1 ""
   "ieeeaccess.cls" 1738753265.81115 50810 d173d3a5fd33c6c22efb264ee2bd1e21 ""
@@ -109,6 +109,8 @@
   "t1-formata-condmedium.tfm" 1738753265.81115 1412 69835d9272a4cf9349297208bcc60045 ""
   "t1-formata-medium.pfb" 1738753265.81449 67701 47a57ee2678066d392f8aebdda0dba09 ""
   "t1-formata-medium.tfm" 1738753265.81449 4720 f3dcbbd4c5991060387bb367b565796f ""
+  "t1-formata-mediumitalic.pfb" 1738753265.81449 62483 6a4f0719988b39391be7f3eafab5eeac ""
+  "t1-formata-mediumitalic.tfm" 1738753265.81449 4948 54bfa7890f4a946af8e94df300c347a0 ""
   "t1-formata-regsymb.tfm" 1738753265.81449 432 19a4c7f187df1bdfaae5753cb3e3d2f5 ""
   "t1-formata-regular.pfb" 1738753265.81449 63982 dbb8ab652bffe8ebac7ccd1135db8d17 ""
   "t1-formata-regular.tfm" 1738753265.81449 1416 e821ce24df6123f0c5825df58798261c ""

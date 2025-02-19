@@ -60,8 +60,7 @@
 % \history{Date of publication xxxx 00, 0000, date of current version xxxx 00, 0000.}
 % \doi{10.1109/ACCESS.2024.0429000}
 
-\title{Annotation of Calibration Patterns for RGB-LiDAR Evaluations using ML. (Replace with name
-of model)}
+\title{Annotation of Calibration Patterns for RGB-LiDAR Evaluations using Segmentation Models}
 \author{\uppercase{Bruno Silva}\authorrefmark{1},PhD. Student\\
 \uppercase{Gonçalo Ribeiro}\authorrefmark{1},PhD. Student}
 
@@ -123,13 +122,50 @@ points of the outer border of the pattern. This comparison is not ambiguous as t
 geometric transformations required for the projection are indeed correct. In ATOM, the 3D border points are already priorly labeled as
 they are a requirement for the cost function that optimizes the pose of these sensors. However, the 2D points of the border are not
 required by the RGB cost function. The current solution is a manual corner labeling method, as an automatic method struggles
-with detecting orientation and deal with edge cases. This project aims to develop a automatic method to simplify the evaluation
+with detecting orientation and deal with edge cases. This project aims to develop an automatic method to simplify the evaluation
 pipeline to the user.
 
 
 \section{Proposed Approach}
 
-  \lipsum[1-2]
+\subsection{Data preparation}
+
+The data we had:
+  -  Images with corners labeled
+
+Captured more images to have more dataset diversity with other types of calibration patterns
+
+Developed a annotation program to label corners of the patterns. 
+Developed a program to convert labeled corners into segmentation masks that served later to train the models.
+
+\subsection{Why use segmentation models}
+
+Using a more simple CNN/FC combo to find just the coordinates of the corners of the pattern was not feasible as the size of the output is not
+constant and a neural network with dynamic outputs is much more complex. More often than not, at least one corner of the pattern is
+clipped in the image. If one corner is clipped, 5 points are instead needed to draw lines on the 4 sides of the pattern. If 2 adjacent corners
+are clipped, only 3 sides are visible. The solution we found to answer this problem is to find the segmentation mask of the pattern
+instead and compute the edges afterward with classical computer vision. 
+
+\subsection{Transfer Learning with DeepLabV3 and Resnet50 Backbone}
+
+Using transfer learning with a pretrained DeepLabv3 model was the first option considered. DeepLabV3 is a complex model designed for
+image segmentation. Including the Resnet50 backbone, which is a CNN, the model has in total around 41M parameters. Upon freezing the
+backbone, we were left with 17M trainable parameters. The pretrained model came from PyTorch built-in models and was originally trained
+on a subset of known COCO dataset, using only the 20 categories that are present in the Pascal VOC dataset, mainly consisting of big
+every objects like cars, planes, sofas, bicycle...
+
+The train was conducted using the Adam optimizer and cross entropy loss, batch size of 4 and 10 epochs. Our dataset had 80 images. We
+found the loss to stay constant and high, meaning our model was not learning anything from the training. We figured that the dataset
+that the model was originally trained on was too different from ours and the model could not learn within a feasible number of epochs
+with only 80 images. Our next attempt was to try a simpler segmentation model and train it from the ground up.
+
+\subsection{U-net trained from scratch}
+
+\subsection{U-net with pretrained Resnet50 Backbone}
+
+
+
+
 
 
 \section{Results}
