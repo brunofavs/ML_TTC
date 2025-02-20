@@ -1,0 +1,181 @@
+\documentclass{beamer}
+%* Packages Used
+
+% Uncomment if portuguese is the desired language
+% \usepackage[portuguese]{babel}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+
+\usepackage{listings}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[bibstyle=ieee,citestyle=numeric-comp]{biblatex} % IEEE citation style
+\addbibresource{references.bib}
+
+\usepackage[export]{adjustbox}
+
+\usepackage[flushleft]{threeparttable}
+
+% Custom line spacing
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{ragged2e}
+
+\usepackage{subcaption}
+\usepackage{tikz}
+
+%-----------------------------------------
+%          Macros
+%-----------------------------------------
+
+
+\renewcommand*{\thefootnote}{(\arabic{footnote})}
+\newcommand{\Tau}{\scalebox{1.44}{$\tau$}}
+
+\newcommand{\tf}[2]{\prescript{#1}{}{\mathbf{T}^{#2}}}
+\newcommand{\tfC}[3]{\prescript{#1}{}{\mathbf{T}^{#2}_{#3}}}
+\newcommand{\tfEstimated}[2]{\prescript{#1}{}{\mathbf{\hat{T}}^{#2}}}
+\newcommand{\tfEstimatedC}[3]{\prescript{#1}{}{\mathbf{\hat{T}}^{#2}_{#3}}}
+
+% For atomic tf's
+\newcommand{\tfAtomic}[2]{\prescript{#1}{}{\mathbf{\Tau}^{#2}}}
+\newcommand{\tfAtomicC}[3]{\prescript{#1}{}{\mathbf{\Tau}^{#2}_{#3}}}
+
+% For atomic estimated tf's
+\newcommand{\tfAtomicEstimated}[2]{\prescript{#1}{}{\mathbf{\hat{\Tau}}^{#2}}}
+
+
+
+\newcommand{\optParam}[2]{\prescript{}{#1}{\mathbf{\hat{\Tau}}_{#2}}}
+
+%
+\newcommand{\intrisics}[1]{\mathbf{K}_{#1}}
+
+% Maybe unnecessary but makes sure I dont screw up
+\newcommand{\coordsthreeD}[2]{\mathbf{#1}_{#2}}
+\newcommand{\coordstwoD}[2]{{#1}_{#2}}
+
+\newcommand{\rotationComponent}[3]{\prescript{#1}{}{\mathbf{R}^{#2}_{#3}}}
+\newcommand{\translationComponent}[3]{\prescript{#1}{}{\mathbf{t}^{#2}_{#3}}}
+
+%-----------------------------------------
+%          Tikz Setup
+%-----------------------------------------
+
+\usetikzlibrary{shapes.arrows}
+
+\tikzset{
+  myarrow/.style={
+    draw,
+    fill=black,
+    single arrow,
+    minimum height=3.5ex,
+    single arrow head extend=1ex
+  }
+}
+
+\newcommand{\arrowup}{%
+  \tikz [baseline=-0.5ex]{\node [myarrow,rotate=90] {};}
+}
+
+\newcommand{\arrowdown}{%
+  \vspace{0.3cm}
+  \tikz [baseline=-1ex]{\node [myarrow,rotate=-90] {};}
+  \vspace{0.3cm}
+}
+
+%-----------------------------------------
+%          Hyperref setup
+%-----------------------------------------
+    
+%* Package settings
+\hypersetup{
+  colorlinks  = true,
+  linkcolor   = black,
+  urlcolor    = red,
+}
+      
+%-----------------------------------------
+%          Beamer configs
+%-----------------------------------------
+
+% Theme
+
+% \usetheme{metropolis}           % Use metropolis theme
+\usetheme{moloch}           % Use metropolis theme
+\setbeamercolor{background canvas}{bg=white}
+\setmainfont[Path=/usr/share/fonts/TTF/]{FiraSans-Regular.ttf}
+
+
+% ----
+
+\makeatletter
+\setbeamertemplate{headline}{%
+  \begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}{section in head/foot}
+    \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[colsep=1.5pt]{lower separation line head}
+  \end{beamercolorbox}
+}
+\makeatother
+\setbeamercolor{section in head/foot text}{fg=white} % This line sets the text color to white
+
+\setbeamercovered{transparent}
+% \setbeamertemplate{section in toc}{\par\hspace*{2em}~\inserttocsubsection ;\par}
+
+% To hide section title transition slides
+\AtBeginSection{}
+% Title Page
+
+\date{\today}
+
+\author{
+  Bruno Silva      - \textit{Author}\\
+  Miguel Oliveira  - \textit{Advisor}\\
+  Eurico Pedrosa  - \textit{Advisor}\\
+}
+
+\institute{University of Aveiro\\PhD. in Mechanical Engineering.}
+
+
+\title{
+  Title
+}
+\titlegraphic{
+  \vspace{-0.5cm}
+\includegraphics[width=2.5cm]{resources/ua_logo.png}
+}
+
+%------------
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents
+\end{frame}
+
+\input{sections/template/introducao.tex}
+\input{sections/template/methodology.tex}
+\input{sections/template/findings.tex}
+\input{sections/template/conclusion.tex}
+
+
+
+\end{document}
