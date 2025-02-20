@@ -1,0 +1,12 @@
+\subsection{Transfer Learning with DeepLabV3 and Resnet50 Backbone}
+
+Using transfer learning with a pretrained DeepLabv3 model was the first option considered. DeepLabV3 is a complex model designed for
+image segmentation. Including the Resnet50 backbone, which is a CNN, the model has in total around 41M parameters. Upon freezing the
+backbone, we were left with 17M trainable parameters. The pretrained model came from PyTorch built-in models and was originally trained
+on a subset of known COCO dataset, using only the 20 categories that are present in the Pascal VOC dataset, mainly consisting of big
+every objects like cars, planes, sofas, bicycle...
+
+The train was conducted using the Adam optimizer and cross entropy loss, batch size of 4 and 10 epochs. Our dataset had 80 images. We
+found the loss to stay constant and high, meaning our model was not learning anything from the training. We figured that the dataset
+that the model was originally trained on was too different from ours and the model could not learn within a feasible number of epochs
+with only 80 images. Our next attempt was to try a simpler segmentation model and train it from the ground up.
