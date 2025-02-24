@@ -1,3 +1,7 @@
 \section{Conclusion}
 
-  \lipsum[1-2]
+We presented a approach to automate the annotation of the outer borders of a calibration patterns using deep learning. By leveraging
+segmentation models instead of direct CNN/FC combos, we addressed challenges related to pattern occlusions and variable output sizes.
+While transfer learning with DeepLabV3 did not yield satisfactory results, training a U-Net model with a ResNet50 backbone proved
+highly effective. This approach streamlines the evaluation process, reducing manual effort while maintaining accuracy. Future work
+could focus on further refining the model.

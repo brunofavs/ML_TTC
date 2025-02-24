@@ -1,9 +1,17 @@
 \subsection{Data preparation}
 
-The data we had:
-  -  Images with corners labeled
+% The data we had:
+%   -  Images with corners labeled
+%
+% Captured more images to have more dataset diversity with other types of calibration patterns
+%
+% Developed a annotation program to label corners of the patterns. 
+% Developed a program to convert labeled corners into segmentation masks that served later to train the models.
 
-Captured more images to have more dataset diversity with other types of calibration patterns
+We initially had a dataset consisting of images with labeled outer corners of a ChArUco board, specifically the four corners that
+define the physical boundary of the pattern. To improve dataset diversity, we captured additional images featuring different types of
+calibration patterns.
 
-Developed a annotation program to label corners of the patterns. 
-Developed a program to convert labeled corners into segmentation masks that served later to train the models.
+To facilitate data annotation, we developed a program to label these outer corners bypassing the usual calibration pipeline necessary
+to obtain these annotations. Additionally, we created a program to convert the labeled corners into segmentation masks, which were
+later used for model training.

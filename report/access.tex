@@ -76,8 +76,13 @@
 
 
 \begin{abstract}
-  \lipsum[1-2]
-\end{abstract}
+
+  Extrinsic calibration is a crucial step in sensor fusion. This work presents a deep-learning-based augmentation to ATOM, a
+  multi-sensor and multi-modal calibration framework, for automating the annotation of the outer borders of calibration patterns,
+  eliminating the need for manual labeling. Instead of predicting the outer corners directly with a CNN/FC combo, which proved
+  infeasible due to variable output sizes, we trained segmentation models to detect the pattern and later extracted the edges using
+classical computer vision techniques. After testing various architectures, a U-Net model with a pretrained ResNet50 backbone delivered
+the best results. \end{abstract}
 
 \begin{keywords}
 Extrinsic Calibration, Robot Calibration, Calibration Pattern, Machine Learning

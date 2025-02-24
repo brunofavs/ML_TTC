@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber aux/main"] 1740074233.35821 "aux/main.bcf" "aux/main.bbl" "aux/main" 1740079247.85021 0
-  "aux/main.bcf" 1740079246.89263 106798 dcaf7220b5525e7e10a352e2f7ce1657 "xelatex"
+["biber aux/main"] 1740416009.7549 "aux/main.bcf" "aux/main.bbl" "aux/main" 1740416201.87926 0
+  "aux/main.bcf" 1740416198.42602 106798 dcaf7220b5525e7e10a352e2f7ce1657 "xelatex"
   (generated)
   "aux/main.bbl"
   "aux/main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1740079247.00736 "aux/main.xdv" "build/main.pdf" "build/main" 1740079247.85429 0
-  "aux/main.xdv" 1740079246.89597 69488 73882a993b3a7a06aca940f940a4af6f "xelatex"
+["xdvipdfmx"] 1740416198.54203 "aux/main.xdv" "build/main.pdf" "build/main" 1740416201.88259 0
+  "aux/main.xdv" 1740416198.42935 184088 3bf48b6ca24eaba3223ec62c13d04610 "xelatex"
   (generated)
   "build/main.pdf"
   (rewritten before read)
-["xelatex"] 1740079244.77019 "main.tex" "aux/main.xdv" "main" 1740079247.85027 0
+["xelatex"] 1740416195.57193 "main.tex" "aux/main.xdv" "main" 1740416201.87932 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1736268207 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1736268207 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1736268207 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -277,18 +277,23 @@
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1736268207 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1740060278 9579523 baa70cd7a42a3a3cea90b1a73425dfec ""
-  "aux/main.aux" 1740079246.8893 2067 0653132c50c5c45a5fd2898829496a13 "xelatex"
-  "aux/main.bbl" 1740074233.90587 466 ee04f40f768daeed26442158e95aba61 "biber aux/main"
-  "aux/main.nav" 1740079246.89597 1055 902faa65631ddf2f99dbc5208d8a6a2d "xelatex"
-  "aux/main.out" 1740079246.8893 192 6b69cbe00e7d89e255e563949894bd13 "xelatex"
-  "aux/main.run.xml" 1740079246.89597 2409 bc2d9e9d8dbff7800ecdfc320fc46d22 "xelatex"
-  "aux/main.toc" 1740079246.89597 94 f16cf3d36b33ff18df11aaebf7361a07 "xelatex"
-  "main.tex" 1740076825.28239 4335 53fb6e07d1c81fecf69e6bd1440d999a ""
+  "aux/main.aux" 1740416198.42268 3130 b9a6b78afc91b3b3965578e34f6becbe "xelatex"
+  "aux/main.bbl" 1740416010.53413 466 ee04f40f768daeed26442158e95aba61 "biber aux/main"
+  "aux/main.nav" 1740416198.42935 1672 4d55b2684b982d473117efb07eb86cf9 "xelatex"
+  "aux/main.out" 1740416198.42268 285 9bc0069cc755de2c95f599318397ce8d "xelatex"
+  "aux/main.run.xml" 1740416198.42935 2409 bc2d9e9d8dbff7800ecdfc320fc46d22 "xelatex"
+  "aux/main.toc" 1740416198.42935 141 ee0309c16ab25a1f2e4127912b1b1262 "xelatex"
+  "main.tex" 1740415841.16914 4367 4cc99ab76448ea763910b190b126c563 ""
+  "resources/images/instance_segmentation.png" 1740079260.73611 471255 44cf5bcd86001d2a7397c2b631bb5459 ""
+  "resources/images/panoptic_segmentation.png" 1740079260.73945 603571 dcc73b786a7299397133dd7f861404ba ""
   "resources/images/pattern_28.jpg" 1739732208.3751 3451295 54378877c797cb7438d6999c0079de38 ""
   "resources/images/pattern_28_lines.png" 1740073282.97624 2077751 8e98afaf7ad20cc72b2336f0d73b6a7b ""
+  "resources/images/placeholder.png" 1738758886.8065 6146 1632e46a5c79d43f3125ca62c54189cb ""
+  "resources/images/semantic_segmentation.png" 1740079260.73945 570511 6af033f3c1543b8874bebf06bf5b215b ""
   "resources/images/ua_logo.png" 1738758886.8065 4155 29baef92e33889c7f171c7001cfe64ba ""
-  "sections/approaches.tex" 1740079244.0326 490 a1e3f70fa2d41a7adb559e4d404fcbb8 ""
-  "sections/introduction.tex" 1740076876.30639 1656 f148932fdc52b38d29780618e627f53a ""
+  "sections/approaches.tex" 1740414877.5519 2043 a54fc113368c590dd4d40574961ab766 ""
+  "sections/conclusion.tex" 1740415819.62894 603 45cce15178121a19d4311657809c31ea ""
+  "sections/introduction.tex" 1740416194.84598 2278 7471e3c905f4986398657d75a13a8d80 ""
   (generated)
   "aux/main.aux"
   "aux/main.bcf"
