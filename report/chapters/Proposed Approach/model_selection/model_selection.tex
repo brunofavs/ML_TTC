@@ -19,3 +19,10 @@ convergence and adaptive learning rates. Additionally, we evaluated Adam with
 Weight Decay to mitigate potential overfitting.
 
 For batch size, we used the maximum value that the GPU could accommodate.
+
+We attempted to implement an automatic stopping criterion based on loss and 
+accuracy. Training would stop if the loss did not decrease for five consecutive 
+epochs or if the accuracy did not improve within the same period. However, this 
+approach led to premature stopping due to the instability of training, as 
+discussed in the next section. Consequently, we opted to train for a fixed 200 
+epochs and retain the model with the highest accuracy.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.12)  26 FEB 2025 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.12)  26 FEB 2025 17:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -849,10 +849,9 @@ Underfull \hbox (badness 1960) in paragraph at lines 3--8
 \T1/times/n/n/10 was the first op-tion con-sid-ered. DeepLabV3 is a com-
  []
 
-) (./chapters/results/unet/unet.tex
 File: branco.png Graphic file (type png)
 <use branco.png>
-Package pdftex.def Info: branco.png  used on input line 1.
+Package pdftex.def Info: branco.png  used on input line 8.
 (pdftex.def)             Requested size: 12.0pt x 26.71617pt.
 
 Overfull \hbox (505.12177pt too wide) has occurred while \output is active
@@ -869,7 +868,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
 
-[2 <./resources/images/pattern_28.jpg> <./resources/images/pattern_28_lines.png (PNG copy)>]) (./chapters/results/unet_resnet/unet_resnet.tex)) (./chapters/conclusions/conclusions.tex) (./chapters/bibliography/references.tex)
+[2 <./resources/images/pattern_28.jpg> <./resources/images/pattern_28_lines.png (PNG copy)>]) (./chapters/results/unet/unet.tex) (./chapters/results/unet_resnet/unet_resnet.tex)) (./chapters/conclusions/conclusions.tex) (./chapters/bibliography/references.tex)
 File: bullet.png Graphic file (type png)
 <use bullet.png>
 Package pdftex.def Info: bullet.png  used on input line 122.
@@ -905,15 +904,15 @@ Package logreq Info: Writing requests to 'access.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19904 strings out of 476076
- 349680 string characters out of 5793775
+ 19902 strings out of 476076
+ 349622 string characters out of 5793775
  1949187 words of memory out of 5000000
- 41697 multiletter control sequences out of 15000+600000
+ 41695 multiletter control sequences out of 15000+600000
  617090 words of font info for 138 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,12n,81p,1829b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-medium.pfb><./t1-formata-mediumitalic.pfb><./t1-formata-regular.pfb><./t1-times-italic.pfb><./t1-times.pfb>
-Output written on access.pdf (3 pages, 5701122 bytes).
+Output written on access.pdf (3 pages, 5702454 bytes).
 PDF statistics:
  144 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
