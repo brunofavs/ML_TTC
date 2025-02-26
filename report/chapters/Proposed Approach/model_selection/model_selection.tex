@@ -1,0 +1,7 @@
+\subsection{Model selection and training setup}
+To select the models to use, we prioritized the source code availability, as well 
+as the availability of pre-trained weights. Currently the PyTorch Vision framework has
+three models for semantic segmentation: DeepLabV3~\cite{DeepLabV3}, FCN~\cite{fcn} and 
+LRASPP~\cite{LRASPP}. From this models we choose DeepLabV3 since the authors claimed 
+the best results. In addition to the PyTorch models, we also looked for a simple well 
+known model in order to have an easier model to use. For that we choose the U-Net~\cite{unet}.

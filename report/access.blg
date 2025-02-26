@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report/access.blg'
+[112] biber:340> INFO - === qua fev 26, 2025, 13:44:25
+[132] Biber.pm:419> INFO - Reading '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report/access.bcf'
+[216] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[237] Biber.pm:4419> INFO - Processing section 0
+[250] Biber.pm:4610> INFO - Looking for bibtex file 'chapters/bibliography/references.bib' for section 0
+[251] bibtex.pm:1713> INFO - LaTeX decoding ...
+[273] bibtex.pm:1519> INFO - Found BibTeX data source 'chapters/bibliography/references.bib'
+[369] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[369] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[369] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[369] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[372] bbl.pm:660> INFO - Writing '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report/access.bbl' with encoding 'UTF-8'
+[375] bbl.pm:763> INFO - Output to /home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report/access.bbl
+[376] Biber.pm:131> WARN - I didn't find a database entry for 'unet' (section 0)
+[376] Biber.pm:133> INFO - WARNINGS: 1

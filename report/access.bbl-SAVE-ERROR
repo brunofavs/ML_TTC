@@ -1,0 +1,93 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{teste}{article}{}
+      \name{author}{5}{}{%
+        {{hash=a7e03d02907163a9404690e3ed7069d4}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Yanda},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a40d576b1592c607417a95d741c0e8d4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Ling},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bc20e54573d2db853852f86802ab83de}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a240312de3b8810cc3af83e103486e32}{%
+           family={An},
+           familyi={A\bibinitperiod},
+           given={Senjian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7f01771870e49830cc188ff9f5ea0175}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{69dc0052dad3eca976f42dfb2a4ed9ac}
+      \strng{fullhash}{9afa3619072cbeed8c1ab70c147f7dae}
+      \strng{bibnamehash}{9afa3619072cbeed8c1ab70c147f7dae}
+      \strng{authorbibnamehash}{9afa3619072cbeed8c1ab70c147f7dae}
+      \strng{authornamehash}{69dc0052dad3eca976f42dfb2a4ed9ac}
+      \strng{authorfullhash}{9afa3619072cbeed8c1ab70c147f7dae}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the field of structural health monitoring ({SHM}), computer vision based methods have been usually developed for 2-dimensional (2D) vibration displacement measurement and crack identification of civil engineering structures. However, the accurate measurement of tiny 3-dimensional (3D) vibrations for real civil engineering structures remains a very difficult task. To overcome this challenge, this paper proposes a target-free full-field 3D tiny vibration measurement approach for civil engineering structures by using a binocular vision system. The proposed approach is based on deep learning and motion magnification. A phase-based video motion magnification algorithm is employed to achieve a high measurement accuracy of tiny vibrations at the submillimeter level. The advanced key point detection, matching and tracking algorithms via deep learning techniques are employed to achieve target-free tiny vibration displacement measurement. The accuracy and performance of the proposed approach are evaluated through experimental tests on a steel cantilever beam in the laboratory. In-field experimental tests are conducted on a pedestrian bridge on a university campus to investigate the accuracy of the proposed approach in practical applications. The measured 3D tiny vibration displacement from the proposed approach is compared with those measured by laser displacement sensors, and the derived acceleration responses are compared with those measured from the installed accelerometers on the testing structures. The results demonstrate that the 3D tiny vibration measurements are obtained accurately by the proposed approach.}
+      \field{day}{10}
+      \field{issn}{0022-460X}
+      \field{journaltitle}{Journal of Sound and Vibration}
+      \field{month}{11}
+      \field{shortjournal}{Journal of Sound and Vibration}
+      \field{title}{Target-free 3D tiny structural vibration measurement based on deep learning and motion magnification}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{volume}{538}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{117244}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jsv.2022.117244
+      \endverb
+      \verb{file}
+      \verb PDF:/home/gribeiro/Zotero/storage/Z93NNDHX/Shao et al. - 2022 - Target-free 3D tiny structural vibration measurement based on deep learning and motion magnification.pdf:application/pdf;ScienceDirect Snapshot:/home/gribeiro/Zotero/storage/AFVJA2XJ/S0022460X2200431X.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022460X2200431X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022460X2200431X
+      \endverb
+      \keyw{Binocular Vision System,Deep learning,Motion magnification,Target-free,Three-Dimensional Displacement,Tiny Vibration Responses}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

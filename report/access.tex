@@ -1,13 +1,31 @@
 \documentclass{ieeeaccess}
-\usepackage{cite}
+% \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 
 
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{mathtools}
+
+\usepackage[bibstyle=ieee,citestyle=numeric-comp]{biblatex}
+\addbibresource{chapters/bibliography/references.bib}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=doi,final]
+      \step[fieldset=url,null]
+      \step[fieldset=urldate,null]
+      \step[fieldset=isbn,null]
+      \step[fieldset=issn,null]
+      \step[fieldset=note,null]
+    }  
+  }
+}
 
 \usepackage{lipsum}
 \usepackage{bm}
@@ -97,6 +115,8 @@ Extrinsic Calibration, Robot Calibration, Calibration Pattern, Machine Learning
 \input{chapters/Proposed Approach/proposed_approach.tex}
 
 \input{chapters/conclusions/conclusions.tex}
+
+\input{chapters/bibliography/references.tex}
 
 \EOD
 \end{document}
