@@ -19,73 +19,396 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{teste}{article}{}
-      \name{author}{5}{}{%
-        {{hash=a7e03d02907163a9404690e3ed7069d4}{%
-           family={Shao},
-           familyi={S\bibinitperiod},
-           given={Yanda},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=a40d576b1592c607417a95d741c0e8d4}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Ling},
-           giveni={L\bibinitperiod}}}%
-        {{hash=bc20e54573d2db853852f86802ab83de}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Jun},
-           giveni={J\bibinitperiod}}}%
-        {{hash=a240312de3b8810cc3af83e103486e32}{%
-           family={An},
+    \entry{atom}{article}{}
+      \name{author}{7}{}{%
+        {{hash=ab37a22c2fb73f5aafdc1246e3f5826f}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4d62b81eefc9749226063136187025d0}{%
+           family={Pedrosa},
+           familyi={P\bibinitperiod},
+           given={Eurico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f5626a395c11ceed12db45ef52ff8f8b}{%
+           family={Aguiar},
            familyi={A\bibinitperiod},
-           given={Senjian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=7f01771870e49830cc188ff9f5ea0175}{%
-           family={Hao},
-           familyi={H\bibinitperiod},
-           given={Hong},
-           giveni={H\bibinitperiod}}}%
+           given={André\bibnamedelima Pinto},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=f162c0c7f3eade1c5167754b1905dd03}{%
+           family={Rato},
+           familyi={R\bibinitperiod},
+           given={Daniela\bibnamedelimb Ferreira\bibnamedelimb Pinto\bibnamedelima Dias},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=906a823ba7c140bf64d2ab711e523128}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Filipe\bibnamedelima Neves},
+           giveni={F\bibinitperiod\bibinitdelim N\bibinitperiod},
+           prefix={dos},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=0ba24ed55eaab7fe881f488a5f11ae04}{%
+           family={Dias},
+           familyi={D\bibinitperiod},
+           given={Paulo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bff31f24ec81394a2eecd1241506cdd5}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Vitor},
+           giveni={V\bibinitperiod}}}%
       }
-      \strng{namehash}{69dc0052dad3eca976f42dfb2a4ed9ac}
-      \strng{fullhash}{9afa3619072cbeed8c1ab70c147f7dae}
-      \strng{bibnamehash}{9afa3619072cbeed8c1ab70c147f7dae}
-      \strng{authorbibnamehash}{9afa3619072cbeed8c1ab70c147f7dae}
-      \strng{authornamehash}{69dc0052dad3eca976f42dfb2a4ed9ac}
-      \strng{authorfullhash}{9afa3619072cbeed8c1ab70c147f7dae}
+      \strng{namehash}{7a9f8b941f3650adb31458e009db158c}
+      \strng{fullhash}{444f847814ecd1c70e159e5690bc1258}
+      \strng{bibnamehash}{7a9f8b941f3650adb31458e009db158c}
+      \strng{authorbibnamehash}{7a9f8b941f3650adb31458e009db158c}
+      \strng{authornamehash}{7a9f8b941f3650adb31458e009db158c}
+      \strng{authorfullhash}{444f847814ecd1c70e159e5690bc1258}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In the field of structural health monitoring ({SHM}), computer vision based methods have been usually developed for 2-dimensional (2D) vibration displacement measurement and crack identification of civil engineering structures. However, the accurate measurement of tiny 3-dimensional (3D) vibrations for real civil engineering structures remains a very difficult task. To overcome this challenge, this paper proposes a target-free full-field 3D tiny vibration measurement approach for civil engineering structures by using a binocular vision system. The proposed approach is based on deep learning and motion magnification. A phase-based video motion magnification algorithm is employed to achieve a high measurement accuracy of tiny vibrations at the submillimeter level. The advanced key point detection, matching and tracking algorithms via deep learning techniques are employed to achieve target-free tiny vibration displacement measurement. The accuracy and performance of the proposed approach are evaluated through experimental tests on a steel cantilever beam in the laboratory. In-field experimental tests are conducted on a pedestrian bridge on a university campus to investigate the accuracy of the proposed approach in practical applications. The measured 3D tiny vibration displacement from the proposed approach is compared with those measured by laser displacement sensors, and the derived acceleration responses are compared with those measured from the installed accelerometers on the testing structures. The results demonstrate that the 3D tiny vibration measurements are obtained accurately by the proposed approach.}
-      \field{day}{10}
-      \field{issn}{0022-460X}
-      \field{journaltitle}{Journal of Sound and Vibration}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The fusion of data from different sensors often requires that an accurate geometric transformation between the sensors is known. The procedure by which these transformations are estimated is known as sensor calibration. The vast majority of calibration approaches focus on specific pairwise combinations of sensor modalities, unsuitable to calibrate robotic systems containing multiple sensors of varied modalities. This paper presents a novel calibration methodology which is applicable to multi-sensor, multi-modal robotic systems. The approach formulates the calibration as an extended optimization problem, in which the poses of the calibration patterns are also estimated. It makes use of a topological representation of the coordinate frames in the system, in order to recalculate the poses of the sensors throughout the optimization. Sensor poses are retrieved from the combination of geometric transformations which are atomic, in the sense that they are indivisible. As such, we refer to this approach as {ATOM} — Atomic Transformations Optimization Method. This makes the approach applicable to different calibration problems, such as sensor to sensor, sensor in motion, or sensor to coordinate frame. Additionally, the proposed approach provides advanced functionalities, integrated into {ROS}, designed to support the several stages of a complete calibration procedure. Results covering several robotic platforms and a large spectrum of calibration problems show that the methodology is in fact general, and achieves calibrations which are as accurate as the ones provided by state of the art methods designed to operate only for specific combinations of pairwise modalities.}
+      \field{day}{30}
+      \field{journaltitle}{Expert Systems with Applications}
       \field{month}{11}
-      \field{shortjournal}{Journal of Sound and Vibration}
-      \field{title}{Target-free 3D tiny structural vibration measurement based on deep learning and motion magnification}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2024}
-      \field{volume}{538}
+      \field{shortjournal}{Expert Systems with Applications}
+      \field{shorttitle}{{ATOM}}
+      \field{title}{{ATOM}: A general calibration framework for multi-modal, multi-sensor systems}
+      \field{volume}{207}
       \field{year}{2022}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{117244}
+      \field{pages}{118000}
       \range{pages}{1}
       \verb{doi}
-      \verb 10.1016/j.jsv.2022.117244
+      \verb 10.1016/j.eswa.2022.118000
       \endverb
       \verb{file}
-      \verb PDF:/home/gribeiro/Zotero/storage/Z93NNDHX/Shao et al. - 2022 - Target-free 3D tiny structural vibration measurement based on deep learning and motion magnification.pdf:application/pdf;ScienceDirect Snapshot:/home/gribeiro/Zotero/storage/AFVJA2XJ/S0022460X2200431X.html:text/html
+      \verb ScienceDirect Snapshot:/home/gribeiro/Zotero/storage/AUAB36EF/S0957417422012234.html:text/html
       \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0022460X2200431X
+      \keyw{Extrinsic calibration,Intrinsic calibration,Multi-modal,Multi-sensor,Registration,{ROS}}
+    \endentry
+    \entry{camera_lidar}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c8d614eb3e99d052bb122d09b04d5c68}{%
+           family={Pinto\bibnamedelimb de\bibnamedelima Aguiar},
+           familyi={P\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={André\bibnamedelima Silva},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0594b164de6325e59192f62782de63b9}{%
+           family={Riem\bibnamedelimb de\bibnamedelima Oliveira},
+           familyi={R\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Miguel\bibnamedelima Armando},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=351f95a5c0d18e4fb3d328e49f5bbaec}{%
+           family={Pedrosa},
+           familyi={P\bibinitperiod},
+           given={Eurico\bibnamedelima Farinha},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=774012a413ac13824b48980d1fc49aff}{%
+           family={Neves\bibnamedelimb dos\bibnamedelima Santos},
+           familyi={N\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Filipe\bibnamedelima Baptista},
+           giveni={F\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dbcdcf0cf03fb02662fcf5456a3b1bb}
+      \strng{fullhash}{a177b4b3f070e4f9b91dc3f412688fab}
+      \strng{bibnamehash}{a177b4b3f070e4f9b91dc3f412688fab}
+      \strng{authorbibnamehash}{a177b4b3f070e4f9b91dc3f412688fab}
+      \strng{authornamehash}{8dbcdcf0cf03fb02662fcf5456a3b1bb}
+      \strng{authorfullhash}{a177b4b3f070e4f9b91dc3f412688fab}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a camera-to-3D Light Detection And Ranging calibration framework through the optimization of atomic transformations. The system is able to simultaneously calibrate multiple cameras with Light Detection And Ranging sensors, solving the problem of Bundle. In comparison with the state-of-the-art, this work presents several novelties: the ability to simultaneously calibrate multiple cameras and {LiDARs}; the support for multiple sensor modalities; the calibration through the optimization of atomic transformations, without changing the topology of the input transformation tree; and the integration of the calibration framework within the Robot Operating System ({ROS}) framework. The software pipeline allows the user to interactively position the sensors for providing an initial estimate, to label and collect data, and visualize the calibration procedure. To test this framework, an agricultural robot with a stereo camera and a 3D Light Detection And Ranging sensor was used. Pairwise calibrations and a single calibration of the three sensors were tested and evaluated. Results show that the proposed approach produces accurate calibrations when compared to the state-of-the-art, and is robust to harsh conditions such as inaccurate initial guesses or small amount of data used in calibration. Experiments have shown that our optimization process can handle an angular error of approximately 20 degrees and a translation error of 0.5 meters, for each sensor. Moreover, the proposed approach is able to achieve state-of-the-art results even when calibrating the entire system simultaneously.}
+      \field{day}{15}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{month}{8}
+      \field{shortjournal}{Expert Systems with Applications}
+      \field{title}{A Camera to {LiDAR} calibration approach through the optimization of atomic transformations}
+      \field{volume}{176}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{114894}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.eswa.2021.114894
       \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0022460X2200431X
+      \verb{file}
+      \verb Full Text:/home/gribeiro/Zotero/storage/5BZNX2TM/Pinto de Aguiar et al. - 2021 - A Camera to LiDAR calibration approach through the optimization of atomic transformations.pdf:application/pdf;ScienceDirect Snapshot:/home/gribeiro/Zotero/storage/JUJFCQR7/S0957417421003353.html:text/html
       \endverb
-      \keyw{Binocular Vision System,Deep learning,Motion magnification,Target-free,Three-Dimensional Displacement,Tiny Vibration Responses}
+      \keyw{Computer vision,Atomic transformations,Geometric optimization}
+    \endentry
+    \entry{DeepLabV3}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=f0b33c7651e3d639b1e91032533984f9}{%
+           family={Papandreou},
+           familyi={P\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c62e96f68033a3d3cd4639e35a2de4da}{%
+           family={Schroff},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c707ec5b5997dc408a14a34a8380166c}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Hartwig},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{5b195b34f54d3e071b82ddb71e157be1}
+      \strng{fullhash}{19c2ee3db8f1e14eeb04ec0f3fffa9f5}
+      \strng{bibnamehash}{19c2ee3db8f1e14eeb04ec0f3fffa9f5}
+      \strng{authorbibnamehash}{19c2ee3db8f1e14eeb04ec0f3fffa9f5}
+      \strng{authornamehash}{5b195b34f54d3e071b82ddb71e157be1}
+      \strng{authorfullhash}{19c2ee3db8f1e14eeb04ec0f3fffa9f5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work, we revisit atrous convolution, a powerful tool to explicitly adjust filter's field-of-view as well as control the resolution of feature responses computed by Deep Convolutional Neural Networks, in the application of semantic image segmentation. To handle the problem of segmenting objects at multiple scales, we design modules which employ atrous convolution in cascade or in parallel to capture multi-scale context by adopting multiple atrous rates. Furthermore, we propose to augment our previously proposed Atrous Spatial Pyramid Pooling module, which probes convolutional features at multiple scales, with image-level features encoding global context and further boost performance. We also elaborate on implementation details and share our experience on training our system. The proposed `{DeepLabv}3' system significantly improves over our previous {DeepLab} versions without {DenseCRF} post-processing and attains comparable performance with other state-of-art models on the {PASCAL} {VOC} 2012 semantic image segmentation benchmark.}
+      \field{day}{5}
+      \field{eprinttype}{arxiv}
+      \field{month}{12}
+      \field{number}{{arXiv}:1706.05587}
+      \field{title}{Rethinking Atrous Convolution for Semantic Image Segmentation}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1706.05587
+      \endverb
+      \verb{eprint}
+      \verb 1706.05587 [cs]
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:/home/gribeiro/Zotero/storage/UKLUGL7E/Chen et al. - 2017 - Rethinking Atrous Convolution for Semantic Image Segmentation.pdf:application/pdf;Snapshot:/home/gribeiro/Zotero/storage/HUIYRM2U/1706.html:text/html
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{fcn}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4ce499f8943cac7cba0a73388d289a2e}{%
+           family={Shelhamer},
+           familyi={S\bibinitperiod},
+           given={Evan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ef12dd54e0b3abd0b9ab77291e0e30d4}
+      \strng{fullhash}{d070d0f5bba90c7ab76c10afeebb7698}
+      \strng{bibnamehash}{d070d0f5bba90c7ab76c10afeebb7698}
+      \strng{authorbibnamehash}{d070d0f5bba90c7ab76c10afeebb7698}
+      \strng{authornamehash}{ef12dd54e0b3abd0b9ab77291e0e30d4}
+      \strng{authorfullhash}{d070d0f5bba90c7ab76c10afeebb7698}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Convolutional networks are powerful visual models that yield hierarchies of features. We show that convolutional networks by themselves, trained end-to-end, pixels-to-pixels, improve on the previous best result in semantic segmentation. Our key insight is to build “fully convolutional” networks that take input of arbitrary size and produce correspondingly-sized output with efficient inference and learning. We define and detail the space of fully convolutional networks, explain their application to spatially dense prediction tasks, and draw connections to prior models. We adapt contemporary classification networks ({AlexNet}, the {VGG} net, and {GoogLeNet}) into fully convolutional networks and transfer their learned representations by fine-tuning to the segmentation task. We then define a skip architecture that combines semantic information from a deep, coarse layer with appearance information from a shallow, fine layer to produce accurate and detailed segmentations. Our fully convolutional networks achieve improved segmentation of {PASCAL} {VOC} (30\% relative improvement to 67.2\% mean {IU} on 2012), {NYUDv}2, {SIFT} Flow, and {PASCAL}-Context, while inference takes one tenth of a second for a typical image.}
+      \field{journaltitle}{{IEEE} Transactions on Pattern Analysis and Machine Intelligence}
+      \field{month}{4}
+      \field{number}{4}
+      \field{title}{Fully Convolutional Networks for Semantic Segmentation}
+      \field{volume}{39}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{640\bibrangedash 651}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/TPAMI.2016.2572683
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Abstract Record:/home/gribeiro/Zotero/storage/PHVF3BY5/7478072.html:text/html;Submitted Version:/home/gribeiro/Zotero/storage/8H8X8EYH/Shelhamer et al. - 2017 - Fully Convolutional Networks for Semantic Segmentation.pdf:application/pdf
+      \endverb
+      \keyw{Image segmentation,Training,Computer architecture,Convolution,Convolutional Networks,Deep Learning,Fuses,Proposals,Semantic Segmentation,Semantics,Transfer Learning}
+    \endentry
+    \entry{LRASPP}{inproceedings}{}
+      \name{author}{12}{}{%
+        {{hash=315c4166fc1f7cb66324a7f0d82827cd}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=31960f03389184b7f052f5b197cc9fdf}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=47ad65c82b1de7d642988df185d7d8ea}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Weijun},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9dddfcfd529634a150ee38ee5c0203d7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liang-Chieh},
+           giveni={L\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod}}}%
+        {{hash=23d7392f104cfe02f7b2ad118417c972}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Grace},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bab2011f2b9e7af47ab45308470b9faf}{%
+           family={Vasudevan},
+           familyi={V\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod}}}%
+        {{hash=41859f30c12640f5249fa065131fc2f4}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yukun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=79b11327e6066baac1563390e41c13f2}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Ruoming},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c707ec5b5997dc408a14a34a8380166c}{%
+           family={Adam},
+           familyi={A\bibinitperiod},
+           given={Hartwig},
+           giveni={H\bibinitperiod}}}%
+        {{hash=841a83a4bb5e622d6e1bde4818879016}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc},
+           giveni={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{fullhash}{cff49b599801ade6123e821d1d4c0c29}
+      \strng{bibnamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{authorbibnamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{authornamehash}{9c50b2a45a0cfd3fd86fb7850dc23eb0}
+      \strng{authorfullhash}{cff49b599801ade6123e821d1d4c0c29}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the next generation of {MobileNets} based on a combination of complementary search techniques as well as a novel architecture design. {MobileNetV}3 is tuned to mobile phone {CPUs} through a combination of hardware-aware network architecture search ({NAS}) complemented by the {NetAdapt} algorithm and then subsequently improved through novel architecture advances. This paper starts the exploration of how automated search algorithms and network design can work together to harness complementary approaches improving the overall state of the art. Through this process we create two new {MobileNet} models for release: {MobileNetV}3-Large and {MobileNetV}3-Small which are targeted for high and low resource use cases. These models are then adapted and applied to the tasks of object detection and semantic segmentation. For the task of semantic segmentation (or any dense pixel prediction), we propose a new efficient segmentation decoder Lite Reduced Atrous Spatial Pyramid Pooling ({LR}-{ASPP}). We achieve new state of the art results for mobile classification, detection and segmentation. {MobileNetV}3-Large is 3.2\% more accurate on {ImageNet} classification while reducing latency by 20\% compared to {MobileNetV}2. {MobileNetV}3-Small is 6.6\% more accurate compared to a {MobileNetV}2 model with comparable latency. {MobileNetV}3-Large detection is over 25\% faster at roughly the same accuracy as {MobileNetV}2 on {COCO} detection. {MobileNetV}3-Large {LR}-{ASPP} is 34\% faster than {MobileNetV}2 R-{ASPP} at similar accuracy for Cityscapes segmentation.}
+      \field{booktitle}{2019 {IEEE}/{CVF} International Conference on Computer Vision ({ICCV})}
+      \field{eventtitle}{2019 {IEEE}/{CVF} International Conference on Computer Vision ({ICCV})}
+      \field{month}{10}
+      \field{title}{Searching for {MobileNetV}3}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{1314\bibrangedash 1324}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/ICCV.2019.00140
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Abstract Record:/home/gribeiro/Zotero/storage/EBPCKDPK/9008835.html:text/html
+      \endverb
+      \keyw{Neural networks,Computational modeling,Image segmentation,Computer architecture,Proposals,Mobile handsets,Next generation networking}
+    \endentry
+    \entry{unet}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=c107bbd317cd780c2aa7006dbe61d83f}{%
+           family={Navab},
+           familyi={N\bibinitperiod},
+           given={Nassir},
+           giveni={N\bibinitperiod}}}%
+        {{hash=13dfdbfc375d5ae886268dec73d8d8f9}{%
+           family={Hornegger},
+           familyi={H\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4d166f6210ae1792f8f90d7871b4d234}{%
+           family={Wells},
+           familyi={W\bibinitperiod},
+           given={William\bibnamedelima M.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=2413defb142650e8edf0bcd5608ab789}{%
+           family={Frangi},
+           familyi={F\bibinitperiod},
+           given={Alejandro\bibnamedelima F.},
+           giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{9a497128db448eba9bbb6e27b1ed57ed}
+      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authornamehash}{9a497128db448eba9bbb6e27b1ed57ed}
+      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{editorbibnamehash}{33938a515d73fb8b00fd2bd7509d5e86}
+      \strng{editornamehash}{7d63d752dc1fd3abad4ee5f250821c1c}
+      \strng{editorfullhash}{33938a515d73fb8b00fd2bd7509d5e86}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the {ISBI} challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and {DIC}) we won the {ISBI} cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent {GPU}. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.}
+      \field{booktitle}{Medical Image Computing and Computer-Assisted Intervention – {MICCAI} 2015}
+      \field{langid}{english}
+      \field{shorttitle}{U-Net}
+      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{pages}{234\bibrangedash 241}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-319-24574-4_28
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/gribeiro/Zotero/storage/VY6BBFQD/Ronneberger et al. - 2015 - U-Net Convolutional Networks for Biomedical Image Segmentation.pdf:application/pdf
+      \endverb
+      \keyw{Convolutional Layer,Data Augmentation,Deep Network,Ground Truth Segmentation,Training Image}
     \endentry
   \enddatalist
 \endrefsection
