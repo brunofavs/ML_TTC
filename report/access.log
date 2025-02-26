@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.12)  26 FEB 2025 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.12)  26 FEB 2025 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,7 +800,7 @@ Overfull \hbox (9.2679pt too wide) in paragraph at lines 112--112
  []
 
 (./chapters/introduction/introduction.tex
-<branco.png, id=49, 39.89906pt x 88.83188pt>
+<branco.png, id=54, 39.89906pt x 88.83188pt>
 File: branco.png Graphic file (type png)
 <use branco.png>
 Package pdftex.def Info: branco.png  used on input line 42.
@@ -829,12 +829,12 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
  <./branco.png (PNG copy)> <./bullet.png>]
-<resources/images/pattern_28.jpg, id=61, 4095.3pt x 3083.52pt>
+<resources/images/pattern_28.jpg, id=67, 4095.3pt x 3083.52pt>
 File: resources/images/pattern_28.jpg Graphic file (type jpg)
 <use resources/images/pattern_28.jpg>
 Package pdftex.def Info: resources/images/pattern_28.jpg  used on input line 45.
 (pdftex.def)             Requested size: 194.13957pt x 146.13936pt.
-<resources/images/pattern_28_lines.png, id=62, 1285.80376pt x 972.63374pt>
+<resources/images/pattern_28_lines.png, id=68, 1285.80376pt x 972.63374pt>
 File: resources/images/pattern_28_lines.png Graphic file (type png)
 <use resources/images/pattern_28_lines.png>
 Package pdftex.def Info: resources/images/pattern_28_lines.png  used on input line 52.
@@ -902,18 +902,18 @@ Package logreq Info: Writing requests to 'access.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19876 strings out of 476076
- 349096 string characters out of 5793775
+ 19894 strings out of 476076
+ 349634 string characters out of 5793775
  1949187 words of memory out of 5000000
- 41676 multiletter control sequences out of 15000+600000
+ 41692 multiletter control sequences out of 15000+600000
  617090 words of font info for 138 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,12n,81p,1718b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,81p,1829b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <./t1-formata-bold.pfb><./t1-formata-condmedium.pfb><./t1-formata-medium.pfb><./t1-formata-mediumitalic.pfb><./t1-formata-regular.pfb><./t1-times-italic.pfb><./t1-times.pfb>
-Output written on access.pdf (3 pages, 5699206 bytes).
+Output written on access.pdf (3 pages, 5700739 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

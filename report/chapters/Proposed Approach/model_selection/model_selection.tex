@@ -1,10 +1,20 @@
 \subsection{Model selection and training setup}
-To select the models, we prioritized the availability of source code and pre-trained weights. The PyTorch Vision framework currently provides three models for semantic segmentation: DeepLabV3~\cite{DeepLabV3}, FCN~\cite{fcn}, and LRASPP~\cite{LRASPP}. Among these, we selected DeepLabV3, as the authors reported the best results.
+To select the models, we prioritized the availability of source code and 
+pre-trained weights. The PyTorch Vision framework currently provides three 
+models for semantic segmentation: DeepLabV3~\cite{DeepLabV3}, FCN~\cite{fcn}, 
+and LRASPP~\cite{LRASPP}. Among these, we selected DeepLabV3, as the authors 
+reported the best results.
 
-In addition to the PyTorch models, we sought a simple and well-established model to serve as a baseline. For this purpose, we chose U-Net~\cite{unet}.
+In addition to the PyTorch models, we sought a simple and well-established model 
+to serve as a baseline. For this purpose, we chose U-Net~\cite{unet}.
 
-Since this problem involves only one class of interest—the checkerboard—with all other pixels considered background, it can be framed as a binary classification task at the pixel level. Consequently, we selected a loss function designed for binary classification: binary cross-entropy loss.
+Since this problem involves only one class of interest—the checkerboard—with all 
+other pixels considered background, it can be framed as a binary classification 
+task at the pixel level. Consequently, we selected a loss function designed for 
+binary classification: binary cross-entropy loss.
 
-For optimization, we experimented with the Adam optimizer due to its fast convergence and adaptive learning rates. Additionally, we evaluated Adam with Weight Decay to mitigate potential overfitting.
+For optimization, we experimented with the Adam optimizer due to its fast 
+convergence and adaptive learning rates. Additionally, we evaluated Adam with 
+Weight Decay to mitigate potential overfitting.
 
 For batch size, we used the maximum value that the GPU could accommodate.
