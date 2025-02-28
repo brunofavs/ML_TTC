@@ -1,0 +1,55 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Extrinsic calibration is a fundamental process in robotics vision that involves determining the
+relative pose (position and orientation) between different sensors, known as \textit{sensor to sensor calibration}, or between a sensor and a known reference
+frame, which is known as \textit{sensor to coordinate frame}. Extrinsic calibration is crucial because it allows for the accurate integration of data from multiple sensors,
+enabling sensor fusion. For instance, in an autonomous vehicle, the visual information of the camera
+needs to be accurately aligned with the distance measurements of the LiDAR to build a coherent understanding of the
+surroundings. Similarly, in robot arms, the position of the camera position relative to the end-effector must be precisely
+known to perform tasks like object manipulation~\cite{atom}. 
+
+Usually, iterative approaches are used. These rely on a cost function specific to a sensor modality but usually suffer from ambiguities
+in some way or another. An typical cost function for an RGB camera relies on computing the difference between the projection of the
+detection in the 2D image of some key points into a coordinate frame where these key points are precisely known. The objects that
+contain these precisely known points are called \textit{Calibration patterns}. The most common types are chessboards and \textit{ChArUcos}.
+\textit{ChArUcos} are chessboards with unique identifiable symbols embedded on each square that allow computer vision algorithms to decipher if the
+pattern is upside down or if the framing of the image cuts part of the calibration object off. The issue with the aforementioned RGB cost function is that they
+have multiple local minima and not always converge. A simple example is to picture an RGB camera fixed on the end of a prismatic joint
+with the calibration pattern in front of the sensor, perfectly perpendicular to it. Both moving the offset of the joint or
+moving the RGB sensor on the mount can lead to the same relative distance between the sensor and
+the pattern, leading to equal detections of the key points, thus leading to
+ambiguity~\cite{atom}. 
+
+Despite the shortcomings mentioned, these cost functions have the advantage of generally performing more accurately in larger systems,
+as there is much more variety of data, and can still be used effectively in most simpler systems, as their requirements are only the
+existence of a sensor and a pattern. However, this creates the need for true evaluation procedures to assess the quality of the
+calibration results and to make them comparable in order to be publishable~\cite{atom}. 
+
+This project tackles an improvement to a previously fully manual and cumbersome evaluation method between RGB and LiDAR sensors,
+integrated on ATOM~\cite{atom}, a well established multi-sensor multi-modal calibration framework in the
+scientific community. The working principle is that by knowing the
+physical outer limits of the pattern in the 2D image, these points can be projected into the coordinate frame of LiDAR sensor, provided
+that the camera intrinsics are known. Afterward, the 3D points resulting from the projection can be directly compared with the 3D
+points of the outer border of the pattern. This comparison is not ambiguous as the projected points only line up in the 3D frame if the
+geometric transformations required for the projection are indeed correct. In ATOM, the 3D border points are already priorly labeled as
+they are a requirement for the cost function that optimizes the pose of the 3D LiDAR sensors. However, the 2D points of the border are not
+required by the RGB cost function. The current solution is a manual border labeling method, as a
+simple automatic method would struggle with detecting orientation and deal with edge cases.~\cite{camera_lidar} This
+project aims to develop an automatic method using deep learning to simplify the evaluation pipeline to the user. \autoref{fig:input}
+and \autoref{fig:output} represent an example input and a desired output. On the output, each color encodes the border of one of the
+sides of the calibration pattern.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{resources/images/pattern_28.jpg}
+    \caption{Example of an input image for the automatic labeler we aim to develop.}
+    \label{fig:input}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{resources/images/pattern_28_lines.png}
+    \caption{Expected output from the automatic labeler, where the top border is marked in red, the right border in green, the bottom border in blue, and the left border in yellow.}
+    \label{fig:output}
+\end{figure}

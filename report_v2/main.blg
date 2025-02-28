@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[8] Config.pm:310> INFO - Logfile is '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.blg'
+[100] biber:340> INFO - === sex fev 28, 2025, 16:52:26
+[118] Biber.pm:419> INFO - Reading '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bcf'
+[186] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[204] Biber.pm:4419> INFO - Processing section 0
+[216] Biber.pm:4610> INFO - Looking for bibtex file 'chapters/bibliography/references.bib' for section 0
+[218] bibtex.pm:1713> INFO - LaTeX decoding ...
+[248] bibtex.pm:1519> INFO - Found BibTeX data source 'chapters/bibliography/references.bib'
+[375] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[375] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[375] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[375] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[381] bbl.pm:660> INFO - Writing '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bbl' with encoding 'UTF-8'
+[386] bbl.pm:763> INFO - Output to /home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bbl

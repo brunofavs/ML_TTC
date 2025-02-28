@@ -1,0 +1,5 @@
+\section{Results}
+As discussed in \autoref{sec:model_selection}, we utilized the DeepLabV3 and U-Net models. For DeepLabV3, PyTorch offers three backbone options: MobileNetV3-Large, ResNet-101, and ResNet-50. We selected ResNet-50 due to its smaller size. For U-Net, we initially trained a model from scratch and later experimented with a version using a pre-trained ResNet-50 as the backbone.
+\input{chapters/results/deeplabv3/deeplabv3.tex}
+\input{chapters/results/unet/unet.tex}
+\input{chapters/results/unet_resnet/unet_resnet.tex}

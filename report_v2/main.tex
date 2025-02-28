@@ -1,0 +1,158 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+% \usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+
+% % Packages temporarias
+
+% % Packages adicionadas
+\usepackage[hidelinks]{hyperref}
+% \usepackage{booktabs}
+% % \usepackage{tikz, pgfplots}
+% % \usetikzlibrary{positioning,fit,calc,shapes.geometric}
+\usepackage[bibstyle=ieee,citestyle=numeric-comp]{biblatex}
+\addbibresource{chapters/bibliography/references.bib}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=doi,final]
+      \step[fieldset=url,null]
+      \step[fieldset=urldate,null]
+      \step[fieldset=isbn,null]
+      \step[fieldset=issn,null]
+      \step[fieldset=note,null]
+    }  
+  }
+}
+\renewcommand*{\bibfont}{\footnotesize}
+
+\input{plot_funtion.tex}
+\begin{document}
+
+% \title{Single and multi-tasked neural networks for driving assistance applications: selection and deployment\\
+\title{Annotation of Calibration Patterns for RGB-LiDAR Evaluations using Segmentation Models\\
+{}
+}
+
+\author{\IEEEauthorblockN{Gonçalo Ribeiro}
+\IEEEauthorblockA{\textit{Department of Mechanical Engineering} \\
+\textit{University of Aveiro}\\
+Aveiro, Portugal \\
+% gribeiro@ua.pt
+}
+\and
+\IEEEauthorblockN{Gonçalo Ribeiro}
+\IEEEauthorblockA{\textit{Department of Mechanical Engineering} \\
+\textit{University of Aveiro}\\
+Aveiro, Portugal \\
+% gribeiro@ua.pt
+}
+}
+
+% \author{\IEEEauthorblockN{}
+% \IEEEauthorblockA{\textit{} \\
+% \textit{}\\
+% \\
+% \textit{}}
+% \and
+% \IEEEauthorblockN{}
+% \IEEEauthorblockA{\textit{} \\
+% \textit{}\\
+% \\
+% \textit{}}
+% }
+
+\maketitle
+
+\begin{abstract}
+    Extrinsic calibration is a crucial step in sensor fusion. This work presents a deep-learning-based augmentation to ATOM, a
+    multi-sensor and multi-modal calibration framework, for automating the annotation of the outer borders of calibration patterns,
+    eliminating the need for manual labeling. Instead of predicting the outer corners directly with a CNN/FC combo, which proved
+    infeasible due to variable output sizes, we trained segmentation models to detect the pattern and later extracted the edges using
+  classical computer vision techniques. After testing various architectures, a U-Net model with a pretrained ResNet50 backbone delivered
+  the best results.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Extrinsic Calibration, Robot Calibration, Calibration Pattern, Machine Learning
+\end{IEEEkeywords}
+
+
+\input{chapters/introduction/introduction.tex}
+
+% % Example usage for loss plot
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=Loss, xmin=0, xmax=100, ymin=0, ymax=2, title=Training and Validation Loss}
+%     \caption{Training and Validation Loss Curves}
+%     \label{fig:loss_curve}
+% \end{figure}
+
+% % Example usage for DICE score plot
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=100, ymin=0, ymax=1, title=Training and Validation DICE Score}
+%     \caption{Training and Validation DICE Score Curves}
+%     \label{fig:dice_curve}
+% \end{figure}
+
+% Example usage for loss plot
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:loss_curve}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:loss_curve_smooth}
+\end{figure}
+
+% Example usage for DICE score plot
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:dice_curve}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:dice_curve_smooth}
+\end{figure}
+
+
+% Example usage for DICE score plot
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=88, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:dice_curve_best}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=88, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:dice_curve_smooth_best}
+\end{figure}
+\input{chapters/Proposed Approach/proposed_approach.tex}
+
+\input{chapters/results/results.tex}
+
+\input{chapters/conclusions/conclusions.tex}
+
+\input{chapters/bibliography/references.tex}
+
+\end{document}

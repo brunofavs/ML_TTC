@@ -1,0 +1,70 @@
+% \usepackage{pgfplots, pgfkeys}
+% \pgfplotsset{compat=newest}
+
+% \pgfkeys{
+%     /variables/.is family, /variables,
+%     xmin/.estore in = \xmin,
+%     xmax/.estore in = \xmax,
+%     ymin/.estore in = \ymin,
+%     ymax/.estore in = \ymax,
+%     ylabel/.estore in = \ylabel,
+%     title/.estore in = \toptitle,
+% }
+
+% % Command to plot training and validation curves from CSV
+% \newcommand{\inserttrainvalplot}[2]{
+%     \pgfkeys{/variables, #2}
+%     \begin{tikzpicture}
+%         \begin{axis}[
+%             width=0.85\linewidth,
+%             height=5.5cm,
+%             xmin=\xmin, xmax=\xmax,
+%             ymin=\ymin, ymax=\ymax,
+%             xlabel={Epochs},
+%             ylabel={\ylabel{}},
+%             title={\toptitle},
+%             legend pos=north east,
+%             grid=major
+%         ]
+%             \addplot[blue, thick] table[x=Epochs, y=Train losses, col sep=comma] {#1};
+%             \addlegendentry{Train}
+%             \addplot[red, thick] table[x=Epochs, y=Validation losses, col sep=comma] {#1};
+%             \addlegendentry{Validation}
+%         \end{axis}
+%     \end{tikzpicture}
+% }
+\usepackage{pgfplots, pgfkeys}
+\pgfplotsset{compat=newest}
+
+\pgfkeys{
+    /variables/.is family, /variables,
+    xmin/.estore in = \xmin,
+    xmax/.estore in = \xmax,
+    ymin/.estore in = \ymin,
+    ymax/.estore in = \ymax,
+    ylabel/.estore in = \ylabel,
+    title/.estore in = \toptitle,
+}
+
+% Command to plot training and validation curves from CSV
+\newcommand{\inserttrainvalplot}[4]{
+    \pgfkeys{/variables, #2}
+    \begin{tikzpicture}
+        \begin{axis}[
+            width=0.85\linewidth,
+            height=5.5cm,
+            xmin=\xmin, xmax=\xmax,
+            ymin=\ymin, ymax=\ymax,
+            xlabel={Epochs},
+            ylabel={\ylabel{}},
+            title={\toptitle},
+            legend pos=north east,
+            grid=major
+        ]
+            \addplot[blue, thick] table[x=Epochs, y={#3}, col sep=comma] {#1};
+            \addlegendentry{Train}
+            \addplot[red, thick] table[x=Epochs, y={#4}, col sep=comma] {#1};
+            \addlegendentry{Validation}
+        \end{axis}
+    \end{tikzpicture}
+}

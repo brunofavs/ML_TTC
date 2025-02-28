@@ -1,0 +1,309 @@
+
+@article{MTL-Survey,
+	title = {Multi-Task Learning with Deep Neural Networks: A Survey},
+	abstract = {Multi-task learning ({MTL}) is a subfield of machine learning in which multiple tasks are simultaneously learned by a shared model. Such approaches offer advantages like improved data efficiency, reduced overfitting through shared representations, and fast learning by leveraging auxiliary information. However, the simultaneous learning of multiple tasks presents new design and optimization challenges, and choosing which tasks should be learned jointly is in itself a non-trivial problem. In this survey, we give an overview of multi-task learning methods for deep neural networks, with the aim of summarizing both the well-established and most recent directions within the field. Our discussion is structured according to a partition of the existing deep {MTL} techniques into three groups: architectures, optimization methods, and task relationship learning. We also provide a summary of common multi-task benchmarks.},
+	author = {Crawshaw, Michael},
+	date = {2020-09-10},
+	eprinttype = {arxiv},
+	eprint = {2009.09796},
+	keywords = {Multi-task},
+}
+
+@article{MTL-Overview,
+	title = {An Overview of Multi-Task Learning in Deep Neural Networks},
+	abstract = {Multi-task learning ({MTL}) has led to successes in many applications of machine learning, from natural language processing and speech recognition to computer vision and drug discovery. This article aims to give a general overview of {MTL}, particularly in deep neural networks. It introduces the two most common methods for {MTL} in Deep Learning, gives an overview of the literature, and discusses recent advances. In particular, it seeks to help {ML} practitioners apply {MTL} by shedding light on how {MTL} works and providing guidelines for choosing appropriate auxiliary tasks.},
+	author = {Ruder, Sebastian},
+	date = {2017-06-15},
+	eprinttype = {arxiv},
+	eprint = {1706.05098},
+	keywords = {Multi-task},
+}
+
+@article{MTL-Review,
+	title = {A brief review on multi-task learning},
+	volume = {77},
+	issn = {1380-7501},
+	doi = {10.1007/s11042-018-6463-x},
+	pages = {29705--29725},
+	number = {22},
+	journaltitle = {Multimedia Tools and Applications},
+	author = {Thung, Kim-Han and Wee, Chong-Yaw},
+	date = {2018-11-08},
+	keywords = {Multi-task},
+}
+
+@article{latent_mtl,
+	title = {Latent Multi-Task Architecture Learning},
+	volume = {33},
+	issn = {2374-3468},
+	doi = {10.1609/aaai.v33i01.33014822},
+	abstract = {{\textless}p{\textgreater}Multi-task learning ({MTL}) allows deep neural networks to learn from related tasks by sharing parameters with other networks. In practice, however, {MTL} involves searching an enormous space of possible parameter sharing architectures to find (a) the layers or subspaces that benefit from sharing, (b) the appropriate amount of sharing, and (c) the appropriate relative weights of the different task losses. Recent work has addressed each of the above problems in isolation. In this work we present an approach that learns a latent multi-task architecture that jointly addresses (a)–(c). We present experiments on synthetic data and data from {OntoNotes} 5.0, including four different tasks and seven different domains. Our extension consistently outperforms previous approaches to learning latent architectures for multi-task problems and achieves up to 15\% average error reductions over common approaches to {MTL}.{\textless}/p{\textgreater}},
+	pages = {4822--4829},
+	number = {1},
+	journaltitle = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+	author = {Ruder, Sebastian and Bingel, Joachim and Augenstein, Isabelle and Søgaard, Anders},
+	date = {2019-07-17},
+	keywords = {Multi-Task},
+}
+
+@inproceedings{sub_tasks_1,
+	title = {{TOOD}: Task-aligned One-stage Object Detection},
+	isbn = {978-1-66542-812-5},
+	doi = {10.1109/ICCV48922.2021.00349},
+	pages = {3490--3499},
+	booktitle = {2021 {IEEE}/{CVF} International Conference on Computer Vision ({ICCV})},
+	publisher = {{IEEE}},
+	author = {Feng, Chengjian and Zhong, Yujie and Gao, Yu and Scott, Matthew R. and Huang, Weilin},
+	date = {2021-10},
+	keywords = {Multi-task, Object Detection},
+}
+
+@article{sub_tasks_2,
+	title = {Task-balanced distillation for object detection},
+	volume = {137},
+	issn = {00313203},
+	doi = {10.1016/j.patcog.2023.109320},
+	pages = {109320},
+	journaltitle = {Pattern Recognition},
+	author = {Tang, Ruining and Liu, Zhenyu and Li, Yangguang and Song, Yiguo and Liu, Hui and Wang, Qide and Shao, Jing and Duan, Guifang and Tan, Jianrong},
+	date = {2023-05},
+	keywords = {Multi-task, Object Detection},
+}
+
+@article{auxiliary_tasks,
+	title = {Which Tasks Should Be Learned Together in Multi-task Learning?},
+	doi = {10.5555/3524938.3525784},
+	abstract = {Many computer vision applications require solving multiple tasks in real-time. A neural network can be trained to solve multiple tasks simultaneously using multi-task learning. This can save computation at inference time as only a single network needs to be evaluated. Unfortunately , this often leads to inferior overall performance as task objectives can compete, which consequently poses the question: which tasks should and should not be learned together in one network when employing multi-task learn-ing? We study task cooperation and competition in several different learning settings and propose a framework for assigning tasks to a few neural networks such that cooperating tasks are computed by the same neural network, while competing tasks are computed by different networks. Our framework offers a time-accuracy trade-off and can produce better accuracy using less inference time than not only a single large multi-task neural network but also many single-task networks.},
+	pages = {9120--9132},
+	journaltitle = {37th International Conference on Machine Learning, {ICML} 2020},
+	author = {Standley, Trevor and Zamir, Amir and Chen, Dawn and Guibas, Leonidas and Malik, Jitendra and Savarese, Silvio},
+	date = {2020},
+	keywords = {Computer Vision, Multi-task Learning},
+}
+
+@article{fast_lane_detection_v2,
+	title = {Ultra Fast Deep Lane Detection With Hybrid Anchor Driven Ordinal Classification},
+	issn = {19393539},
+	doi = {10.1109/TPAMI.2022.3182097},
+	abstract = {Modern methods mainly regard lane detection as a problem of pixel-wise segmentation, which is struggling to address the problems of efficiency and challenging scenarios like severe occlusions and extreme lighting conditions. Inspired by human perception, the recognition of lanes under severe occlusions and extreme lighting conditions is mainly based on contextual and global information. Motivated by this observation, we propose a novel, simple, yet effective formulation aiming at ultra fast speed and the problem of challenging scenarios. Specifically, we treat the process of lane detection as an anchor-driven ordinal classification problem using global features. First, we represent lanes with sparse coordinates on a series of hybrid (row and column) anchors. With the help of the anchor-driven representation, we then reformulate the lane detection task as an ordinal classification problem to get the coordinates of lanes. Our method could significantly reduce the computational cost with the anchor-driven representation. Using the large receptive field property of the ordinal classification formulation, we could also handle challenging scenarios. Extensive experiments on four lane detection datasets show that our method could achieve state-of-the-art performance in terms of both speed and accuracy. A lightweight version could even achieve 300+ frames per second({FPS}). Our code is at https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2.},
+	journaltitle = {{IEEE} Transactions on Pattern Analysis and Machine Intelligence},
+	author = {Qin, Zequn and Zhang, Pengyi and Li, Xi},
+	date = {2022},
+	note = {Publisher: {IEEE} Computer Society},
+	keywords = {Anchor-driven ordinal classification, Feature extraction, hybrid anchor representation, Image segmentation, lane detection, Lane detection, Lighting, Location awareness, Task analysis, Visualization},
+}
+
+@book{deep_learning_book,
+	title = {Deep Learning},
+	isbn = {978-0-262-03561-3},
+	abstract = {Deep learning is a form of machine learning that enables computers to learn from experience and understand the world in terms of a hierarchy of concepts. Because the computer gathers knowledge from experience, there is no need for a human computer operator to formally specify all the knowledge that the computer needs. The hierarchy of concepts allows the computer to learn complicated concepts by building them out of simpler ones; a graph of these hierarchies would be many layers deep. This book introduces a broad range of topics in deep learning. The text offers mathematical and conceptual background, covering relevant concepts in linear algebra, probability theory and information theory, numerical computation, and machine learning. It describes deep learning techniques used by practitioners in industry, including deep feedforward networks, regularization, optimization algorithms, convolutional networks, sequence modeling, and practical methodology; and it surveys such applications as natural language processing, speech recognition, computer vision, online recommendation systems, bioinformatics, and videogames. Finally, the book offers research perspectives, covering such theoretical topics as linear factor models, autoencoders, representation learning, structured probabilistic models, Monte Carlo methods, the partition function, approximate inference, and deep generative models. Deep Learning can be used by undergraduate or graduate students planning careers in either industry or research, and by software engineers who want to begin using deep learning in their products or platforms. A website offers supplementary material for both readers and instructors.},
+	publisher = {{MIT} Press},
+    pages = {99--103},
+	author = {Ian Goodfellow, Yoshua Bengio, Aaron Courville},
+	date = {2016},
+	note = {Publication Title: {MIT} Press},
+}
+
+@article{segformer,
+	title = {{SegFormer}: Simple and Efficient Design for Semantic Segmentation with Transformers},
+	volume = {34},
+	abstract = {We present {SegFormer}, a simple, efficient yet powerful semantic segmentation framework which unifies Transformers with lightweight multilayer perceptron ({MLP}) decoders. {SegFormer} has two appealing features: 1) {SegFormer} comprises a novel hierarchically structured Transformer encoder which outputs multiscale features. It does not need positional encoding, thereby avoiding the interpolation of positional codes which leads to decreased performance when the testing resolution differs from training. 2) {SegFormer} avoids complex decoders. The proposed {MLP} decoder aggregates information from different layers, and thus combining both local attention and global attention to render powerful representations. We show that this simple and lightweight design is the key to efficient segmentation on Transformers. We scale our approach up to obtain a series of models from {SegFormer}-B0 to {SegFormer}-B5, reaching significantly better performance and efficiency than previous counterparts. For example, {SegFormer}-B4 achieves 50.3\% {mIoU} on {ADE}20K with 64M parameters, being 5× smaller and 2.2\% better than the previous best method. Our best model, {SegFormer}-B5, achieves 84.0\% {mIoU} on Cityscapes validation set and shows excellent zero-shot robustness on Cityscapes-C. Code is available at: github.com/{NVlabs}/{SegFormer}.},
+	pages = {12077--12090},
+	journaltitle = {Advances in Neural Information Processing Systems},
+	author = {Xie, Enze and Wang, Wenhai and Yu, Zhiding and Anandkumar, Anima and Alvarez, Jose M. and Luo, Ping},
+	date = {2021-12-06},
+}
+
+@article{Yolopv2,
+	title = {{YOLOPv}2: Better, Faster, Stronger for Panoptic Driving Perception},
+	abstract = {Over the last decade, multi-tasking learning approaches have achieved promising results in solving panoptic driving perception problems, providing both high-precision and high-efficiency performance. It has become a popular paradigm when designing networks for real-time practical autonomous driving system, where computation resources are limited. This paper proposed an effective and efficient multi-task learning network to simultaneously perform the task of traffic object detection, drivable road area segmentation and lane detection. Our model achieved the new state-of-the-art ({SOTA}) performance in terms of accuracy and speed on the challenging {BDD}100K dataset. Especially, the inference time is reduced by half compared to the previous {SOTA} model. Code will be released in the near future.},
+	author = {Han, Cheng and Zhao, Qichao and Zhang, Shuyi and Chen, Yinzi and Zhang, Zhenlin and Yuan, Jinwei},
+	date = {2022-08-24},
+	eprinttype = {arxiv},
+	eprint = {2208.11434},
+}
+
+
+@article{atlascar2,
+	title = {{ATLASCAR}: A sample of the quests and concerns for autonomous cars},
+	volume = {495},
+	issn = {18761119},
+	doi = {10.1007/978-3-030-11292-9_18},
+	abstract = {The {ATLASCAR} project started in 2010 as an engineering and scientific project at the University of Aveiro, Portugal, with the goal to develop a system to study and improve autonomous driving and driving assistance capabilities. The focus was made both at the engineering level to develop a real scale instrumented and automatic vehicle prototype, and at the research level for advanced perception and system command using a rich set of sensors and the associate computational and software architecture. Besides the expected challenges, new fronts appeared and a set of concerns has been studied which lightened up challenges that will certainly continue to drive other authors and technological players concerned with autonomous cars and the automotive industry.},
+	pages = {355--375},
+	journaltitle = {Lecture Notes in Electrical Engineering},
+	author = {Santos, Vitor},
+	date = {2020},
+	note = {Publisher: Springer Verlag
+{ISBN}: 9783030112912},
+}
+
+@article{twinlitenet,
+	title = {{TwinLiteNet}: An Efficient and Lightweight Model for Driveable Area and Lane Segmentation in Self-Driving Cars},
+	doi = {10.1109/MAPR59823.2023.10288646},
+	abstract = {Semantic segmentation is a common task in autonomous driving to understand the surrounding environment. Driveable Area Segmentation and Lane Detection are particularly important for safe and efficient navigation on the road. However, original semantic segmentation models are computationally expensive and require high-end hardware, which is not feasible for embedded systems in autonomous vehicles. This paper proposes a lightweight model for the driveable area and lane line segmentation. {TwinLiteNet} is designed cheaply but achieves accurate and efficient segmentation results. We evaluate {TwinLiteNet} on the {BDD}100K dataset and compare it with modern models. Experimental results show that our {TwinLiteNet} performs similarly to existing approaches, requiring significantly fewer computational resources. Specifically, {TwinLiteNet} achieves a {mIoU} score of 91.3\% for the Drivable Area task and 31.08\% {IoU} for the Lane Detection task with only 0.4 million parameters and achieves 415 {FPS} on {GPU} {RTX} A5000. Furthermore, {TwinLiteNet} can run in real-time on embedded devices with limited computing power, especially since it achieves 60FPS on Jetson Xavier {NX}, making it an ideal solution for self-driving vehicles. Code is available: https://github.com/chequanghuy/{TwinLiteNet}.},
+	journaltitle = {2023 International Conference on Multimedia Analysis and Pattern Recognition, {MAPR} 2023 - Proceedings},
+	author = {Che, Quang Huy and Nguyen, Dinh Phuc and Pham, Minh Quan and Lam, Duc Khai},
+	date = {2023},
+	note = {Publisher: Institute of Electrical and Electronics Engineers Inc.
+{ISBN}: 9798350327410},
+	keywords = {Segmentation, Computer vision, Edge Computing, Light Weight model, Self Driving Car},
+}
+
+@inproceedings{ros,
+	title = {{ROS}: an open-source Robot Operating System},
+	volume = {3},
+	abstract = {This paper gives an overview of {ROS}, an open- source robot operating system. {ROS} is not an operating system in the traditional sense of process management and scheduling; rather, it provides a structured communications layer above the host operating systems of a heterogenous compute cluster. In this paper, we discuss how {ROS} relates to existing robot software frameworks, and briefly overview some of the available application software which uses {ROS}},
+	booktitle = {{ICRA} workshop on open source software},
+	author = {Quigley, Morgan and Conley, Ken and Gerkey, Brian and Faust, Josh and Foote, Tully and Leibs, Jeremy and Wheeler, Rob and Ng, Andrew Y},
+	date = {2009},
+	note = {Issue: 3.2},
+}
+
+
+@article{Yolop,
+	title = {{YOLOP}: You Only Look Once for Panoptic Driving Perception},
+	volume = {19},
+	issn = {2731-538X},
+	doi = {10.1007/s11633-022-1339-y},
+	pages = {550--562},
+	number = {6},
+	journaltitle = {Machine Intelligence Research},
+	author = {Wu, Dong and Liao, Man-Wen and Zhang, Wei-Tian and Wang, Xing-Gang and Bai, Xiang and Cheng, Wen-Qing and Liu, Wen-Yu},
+	date = {2022-12-07},
+	keywords = {Models, Multi-task},
+}
+
+@software{YoloV5,
+	title = {ultralytics/yolov5: v7.0 - {YOLOv}5 {SOTA} Realtime  Instance Segmentation},
+	url = {https://doi.org/10.5281/zenodo.7347926},
+	publisher = {Zenodo},
+	author = {Jocher, Glenn and Chaurasia, Ayush and Stoken, Alex and Borovec, Jirka and {NanoCode012} and Kwon, Yonghye and Michael, Kalen and {TaoXie} and Fang, Jiacong and {imyhxy} and {Lorna} and Yifu), 曾逸夫(Zeng and Wong, Colin and V, Abhiram and Montes, Diego and Wang, Zhiqiang and Fati, Cristi and Nadar, Jebastin and {Laughing} and {UnglvKitDe} and Sonck, Victor and {tkianai} and {yxNONG} and Skalski, Piotr and Hogan, Adam and Nair, Dhruv and Strobel, Max and Jain, Mrinal},
+	date = {2022-11},
+	doi = {10.5281/zenodo.7347926},
+	keywords = {Models},
+}
+
+@article{o2sformer,
+	title = {End-to-End Lane detection with One-to-Several Transformer},
+	abstract = {Although lane detection methods have shown impressive performance in
+real-world scenarios, most of methods require post-processing which is not
+robust enough. Therefore, end-to-end detectors like {DEtection} {TRansformer}({DETR})
+have been introduced in lane detection.However, one-to-one label assignment in
+{DETR} can degrade the training efficiency due to label semantic conflicts.
+Besides, positional query in {DETR} is unable to provide explicit positional
+prior, making it difficult to be optimized. In this paper, we present the
+One-to-Several Transformer(O2SFormer). We first propose the one-to-several
+label assignment, which combines one-to-many and one-to-one label assignment to
+solve label semantic conflicts while keeping end-to-end detection. To overcome
+the difficulty in optimizing one-to-one assignment. We further propose the
+layer-wise soft label which dynamically adjusts the positive weight of positive
+lane anchors in different decoder layers. Finally, we design the dynamic
+anchor-based positional query to explore positional prior by incorporating lane
+anchors into positional query. Experimental results show that O2SFormer with
+{ResNet}50 backbone achieves 77.83\% F1 score on {CULane} dataset, outperforming
+existing Transformer-based and {CNN}-based detectors. Futhermore, O2SFormer
+converges 12.5x faster than {DETR} for the {ResNet}18 backbone.},
+	author = {Zhou, Kunyang and Zhou, Rui},
+	date = {2023-05-01},
+	eprinttype = {arxiv},
+	eprint = {2305.00675},
+}
+
+@article{resa_detector,
+	title = {{RESA}: Recurrent Feature-Shift Aggregator for Lane Detection},
+	volume = {35},
+	issn = {2374-3468},
+	doi = {10.1609/AAAI.V35I4.16469},
+	abstract = {Lane detection is one of the most important tasks in self-driving. Due to various complex scenarios (e.g., severe occlusion, ambiguous lanes, etc.) and the sparse supervisory signals inherent in lane annotations, lane detection task is still challenging. Thus, it is difficult for the ordinary convolutional neural network ({CNN}) to train in general scenes to catch subtle lane feature from the raw image. In this paper, we present a novel module named {REcurrent} Feature-Shift Aggregator ({RESA}) to enrich lane feature after preliminary feature extraction with an ordinary {CNN}. {RESA} takes advantage of strong shape priors of lanes and captures spatial relationships of pixels across rows and columns. It shifts sliced feature map recurrently in vertical and horizontal directions and enables each pixel to gather global information. {RESA} can conjecture lanes accurately in challenging scenarios with weak appearance clues by aggregating sliced feature map. Moreover, we propose a Bilateral Up-Sampling Decoder that combines coarse-grained and fine-detailed features in the up-sampling stage. It can recover the low-resolution feature map into pixel-wise prediction meticulously. Our method achieves state-of-the-art results on two popular lane detection benchmarks ({CULane} and Tusimple). Code has been made available at: https://github.com/{ZJULearning}/resa.},
+	pages = {3547--3554},
+	number = {4},
+	journaltitle = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+	author = {Zheng, Tu and Fang, Hao and Zhang, Yi and Tang, Wenjian and Yang, Zheng and Liu, Hai Feng and Cai, Deng},
+	date = {2021-05-18},
+	note = {Publisher: Association for the Advancement of Artificial Intelligence
+{ISBN}: 9781713835974},
+	keywords = {Vision for Robotics \& Autonomous Driving},
+}
+
+@article{yoloV7,
+	title = {{YOLOv}7: Trainable Bag-of-Freebies Sets New State-of-the-Art for Real-Time Object Detectors},
+	doi = {10.1109/CVPR52729.2023.00721},
+	pages = {7464--7475},
+	journaltitle = {2023 {IEEE}/{CVF} Conference on Computer Vision and Pattern Recognition ({CVPR})},
+	author = {Wang, Chien-Yao and Bochkovskiy, Alexey and Liao, Hong-Yuan Mark},
+	date = {2023-06-01},
+	note = {Publisher: {IEEE} Computer Society
+{ISBN}: 979-8-3503-0129-8},
+}
+
+@inproceedings{mask2former,
+	title = {Masked-attention Mask Transformer for Universal Image Segmentation},
+	isbn = {978-1-66546-946-3},
+	doi = {10.1109/CVPR52688.2022.00135},
+	pages = {1280--1289},
+	booktitle = {2022 {IEEE}/{CVF} Conference on Computer Vision and Pattern Recognition ({CVPR})},
+	publisher = {{IEEE}},
+	author = {Cheng, Bowen and Misra, Ishan and Schwing, Alexander G. and Kirillov, Alexander and Girdhar, Rohit},
+	date = {2022-06},
+}
+
+@inproceedings{convnext,
+	title = {A {ConvNet} for the 2020s},
+	isbn = {978-1-66546-946-3},
+	doi = {10.1109/CVPR52688.2022.01167},
+	pages = {11966--11976},
+	booktitle = {2022 {IEEE}/{CVF} Conference on Computer Vision and Pattern Recognition ({CVPR})},
+	publisher = {{IEEE}},
+	author = {Liu, Zhuang and Mao, Hanzi and Wu, Chao-Yuan and Feichtenhofer, Christoph and Darrell, Trevor and Xie, Saining},
+	date = {2022-06},
+}
+
+
+% New references
+
+@mastersthesis{tese_goncalo,
+   abstract = {Mestrado em Engenharia Mecânica},
+   author = {Gonçalo Manuel Cordeiro Ribeiro},
+   school = {University of Aveiro},
+   keywords = {ATLASCAR2,Artificial intelligence,Deep learning,Image segmentation,Multiple models,Multitask,Object detection},
+   month = {11},
+   title = {Perception using multi-tasked neural networks on ATLASCAR2},
+   url = {https://ria.ua.pt/handle/10773/40926},
+   year = {2023},
+}
+
+@online{deepstream,
+   author = {Nvidia},
+   title = {{DeepStream SDK}},
+   url = {https://developer.nvidia.com/deepstream-sdk},
+   year = {2023},
+   urldate = {2023-05-09},
+}
+@online{isaac,
+   author = {Nvidia},
+   title = {Isaac {SDK}},
+   url = {https://developer.nvidia.com/isaac-sdk},
+   year = {2023},
+   urldate = {2023-05-09},
+}
+@online{openmmlab,
+   author = {},
+   title = {{OpenMMLab}},
+   url = {https://github.com/open-mmlab},
+   year = {2023},
+   urldate = {2024-04-05},
+}
+@article{visp,
+   author = {Éric Marchand and Fabien Spindler and François Chaumette},
+   doi = {10.1109/MRA.2005.1577023},
+   issn = {10709932},
+   issue = {4},
+   journal = {IEEE Robotics and Automation Magazine},
+   keywords = {C++ library,Fast prototyping,Simulation,Tracking,Visual servoing},
+   month = {12},
+   pages = {40-52},
+   title = {ViSP for visual servoing: A generic software platform with a wide class of robot control skills},
+   volume = {12},
+   year = {2005},
+}
