@@ -3,3 +3,53 @@ As discussed in \autoref{sec:model_selection}, we utilized the DeepLabV3 and U-N
 \input{chapters/results/deeplabv3/deeplabv3.tex}
 \input{chapters/results/unet/unet.tex}
 \input{chapters/results/unet_resnet/unet_resnet.tex}
+
+% Max epoch for (..)
+% train_info_resnet_frozzen_200.csv -> 142 - 0.8597418069839478
+% train_info_resnet_unfrozzen_200.csv -> 17 - 0.8545187711715698
+% train_info_unet_200.csv -> 157 - 0.7839495539665222
+
+
+
+% Example usage for loss plot
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+%     \caption{Training and Validation Loss Curves}
+%     \label{fig:loss_curve}
+% \end{figure}
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+%     \caption{Training and Validation Loss Curves}
+%     \label{fig:loss_curve_smooth}
+% \end{figure}
+
+% % Example usage for DICE score plot
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+%     \caption{Training and Validation DICE Score Curves}
+%     \label{fig:dice_curve}
+% \end{figure}
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+%     \caption{Training and Validation DICE Score Curves}
+%     \label{fig:dice_curve_smooth}
+% \end{figure}
+
+
+% % Example usage for DICE score plot
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=88, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+%     \caption{Training and Validation DICE Score Curves}
+%     \label{fig:dice_curve_best}
+% \end{figure}
+% \begin{figure}[ht]
+%     \centering
+%     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=88, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+%     \caption{Training and Validation DICE Score Curves}
+%     \label{fig:dice_curve_smooth_best}
+% \end{figure}

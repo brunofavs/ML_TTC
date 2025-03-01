@@ -1,3 +1,67 @@
 \subsection{U-net with pretrained Resnet50 Backbone}
 
 Better results
+
+% Frozen backbone
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:renet50_frozen_loss_curve}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:renet50_frozen_loss_curve_smooth}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:renet50_frozen_dice_curve}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=142, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:renet50_frozen_dice_curve_smooth}
+\end{figure}
+
+
+
+% Unfrozen backbone
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=3, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:renet50_unfrozen_loss_curve}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=17, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:renet50_unfrozen_loss_curve_smooth}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:renet50_unfrozen_dice_curve}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=17, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:renet50_unfrozen_dice_curve_smooth}
+\end{figure}

@@ -1,7 +1,33 @@
 \subsection{U-net trained from scratch}
-
 Training the previous model from scratch would require a lot of compute resources and probably be overkill for the desired task. As
 such, we decided to try a simpler model and train it from scratch. Unet is blablabla
 
 Good results
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_unet_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:unet_loss_curve}
+\end{figure}
 
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=157, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:unet_loss_curve_smooth}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_unet_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{north west}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:unet_dice_curve}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=157, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{north west}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:unet_dice_curve_smooth}
+\end{figure}
