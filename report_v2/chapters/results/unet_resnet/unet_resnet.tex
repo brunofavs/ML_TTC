@@ -1,8 +1,25 @@
 \subsection{U-net with pretrained Resnet50 Backbone}
 
-Better results
+After experimenting with training a U-Net model from scratch, we explored modifying its backbone 
+architecture by incorporating a pretrained ResNet50. Similar to our initial approach, we sought 
+an existing implementation of this configuration and adapted one found on \href{https://github.com/rawmarshmellows/pytorch-unet-resnet-50-encoder}{GitHub}\footnote{\url{https://github.com/rawmarshmellows/pytorch-unet-resnet-50-encoder}}. 
+
+However, there was an unexpected discrepancy in the parameter count. The original U-Net model from 
+scratch had 31 million parameters, but adding a ResNet50 backbone—which should have contributed 
+approximately 50 million parameters—resulted in a total of 148 million parameters instead of the 
+expected ~80 million. This suggests that either this or the previous implementation may have 
+contained an error.
+
+Despite this issue, we began by training the model with the ResNet50 backbone's parameters frozen, 
+leaving us with 124 million trainable parameters. Ideally, only the 50 million backbone parameters 
+should have been frozen, but our approach was imperfect. Nevertheless, we proceeded with the training 
+using a batch size of 19 and processing images at a resolution of 512x512 pixels.
+
+The resulting training process was significantly more stable compared to the U-Net trained from 
+scratch, as demonstrated in Figures \ref{fig:renet50_frozen_loss_curve} and \ref{fig:renet50_frozen_dice_curve}.
 
 % Frozen backbone
+% 124300609
 
 \begin{figure}[ht]
     \centering
@@ -13,17 +30,20 @@ Better results
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
-    \label{fig:renet50_frozen_loss_curve_smooth}
-\end{figure}
-
-
-\begin{figure}[ht]
-    \centering
     \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
     \caption{Training and Validation DICE Score Curves}
     \label{fig:renet50_frozen_dice_curve}
+\end{figure}
+
+The model achieved a peak validation DICE score of 85\% at epoch 142. Similarly to the U-Net from scratch, 
+for enhanced clarity in visualizing the training dynamics, Figures \ref{fig:renet50_frozen_loss_curve_smooth} and 
+\ref{fig:renet50_frozen_dice_curve_smooth} present smoothed versions of the loss and DICE curves up to epoch 142.
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
+    \caption{Training and Validation Loss Curves}
+    \label{fig:renet50_frozen_loss_curve_smooth}
 \end{figure}
 
 \begin{figure}[ht]
@@ -33,9 +53,10 @@ Better results
     \label{fig:renet50_frozen_dice_curve_smooth}
 \end{figure}
 
-
+In the final experiment, we trained all 148 million parameters without freezing, using a batch size of 14 and 512x512 pixel images. The outcomes are shown in Figures \ref{fig:renet50_unfrozen_loss_curve} and \ref{fig:renet50_unfrozen_dice_curve}.
 
 % Unfrozen backbone
+% 147808641
 
 \begin{figure}[ht]
     \centering
@@ -46,18 +67,23 @@ Better results
 
 \begin{figure}[ht]
     \centering
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and Validation DICE Score Curves}
+    \label{fig:renet50_unfrozen_dice_curve}
+\end{figure}
+
+The model achieved a peak validation DICE score of 85\% at epoch 17. Surprisingly, this peak was reached much earlier 
+than in the other experiments. When examining the smoothed results up to epoch 17, as shown in Figures 
+\ref{fig:renet50_unfrozen_loss_curve_smooth} and \ref{fig:renet50_unfrozen_dice_curve_smooth}, the 
+training appears significantly more stable.
+
+\begin{figure}[ht]
+    \centering
     \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=17, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
     \caption{Training and Validation Loss Curves}
     \label{fig:renet50_unfrozen_loss_curve_smooth}
 \end{figure}
 
-
-\begin{figure}[ht]
-    \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
-    \caption{Training and Validation DICE Score Curves}
-    \label{fig:renet50_unfrozen_dice_curve}
-\end{figure}
 
 \begin{figure}[ht]
     \centering

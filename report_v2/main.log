@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.12)  1 MAR 2025 01:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.1.12)  1 MAR 2025 19:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -882,7 +882,10 @@ Package pdftex.def Info: resources/images/pattern_28_lines.png  used on input li
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/Proposed Approach/proposed_approach.tex (./chapters/Proposed Approach/data_preparation/data_preparation.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
+) (./chapters/Proposed Approach/proposed_approach.tex (./chapters/Proposed Approach/data_preparation/data_preparation.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]) (./chapters/Proposed Approach/why_use_segmentation_models/why_use_segmentation_models.tex) (./chapters/Proposed Approach/model_selection/model_selection.tex)) (./chapters/results/results.tex (./chapters/results/deeplabv3/deeplabv3.tex
@@ -896,40 +899,49 @@ Underfull \hbox (badness 1389) in paragraph at lines 3--8
  []
 
 ) (./chapters/results/unet/unet.tex [2 <./resources/images/pattern_28.jpg> <./resources/images/pattern_28_lines.png (PNG copy)>]
-PGFPlots: reading {resources/data/train_info_unet_200.csv}
-PGFPlots: reading {resources/data/train_info_unet_200.csv}
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-PGFPlots: reading {resources/data/train_info_unet_200_smooth.csv}
-PGFPlots: reading {resources/data/train_info_unet_200_smooth.csv}
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[][][][][]$\OT1/ptm/m/n/8 https : / / medium . com / @fernandopalominocobo /
+ []
+
+
+Overfull \hbox (65.38911pt too wide) in paragraph at lines 4--4
+\OT1/ptm/m/n/8 mastering-[]u-[]net-[]a-[]step-[]by-[]step-[]guide-[]to-[]segmentation-[]from-[]scratch-[]with-[]pytorch-[]6a17c5916114$[]| 
+ []
+
+PGFPlots: reading {resources/data/train_info_unet_200.csv}
+PGFPlots: reading {resources/data/train_info_unet_200.csv}
 PGFPlots: reading {resources/data/train_info_unet_200.csv}
 PGFPlots: reading {resources/data/train_info_unet_200.csv}
 PGFPlots: reading {resources/data/train_info_unet_200_smooth.csv}
 PGFPlots: reading {resources/data/train_info_unet_200_smooth.csv}
-) (./chapters/results/unet_resnet/unet_resnet.tex
+PGFPlots: reading {resources/data/train_info_unet_200_smooth.csv}
+PGFPlots: reading {resources/data/train_info_unet_200_smooth.csv}
+) (./chapters/results/unet_resnet/unet_resnet.tex [3]
+PGFPlots: reading {resources/data/train_info_resnet_frozzen_200.csv}
+PGFPlots: reading {resources/data/train_info_resnet_frozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_frozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_frozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_frozzen_200_smooth.csv}
 PGFPlots: reading {resources/data/train_info_resnet_frozzen_200_smooth.csv}
-PGFPlots: reading {resources/data/train_info_resnet_frozzen_200.csv}
-PGFPlots: reading {resources/data/train_info_resnet_frozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_frozzen_200_smooth.csv}
 PGFPlots: reading {resources/data/train_info_resnet_frozzen_200_smooth.csv}
 PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200.csv}
-PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200_smooth.csv}
-PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200_smooth.csv}
 PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200.csv}
 PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200_smooth.csv}
 PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200_smooth.csv}
-)) (./chapters/conclusions/conclusions.tex) (./chapters/bibliography/references.tex [3])
+PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200_smooth.csv}
+PGFPlots: reading {resources/data/train_info_resnet_unfrozzen_200_smooth.csv}
+)) (./chapters/conclusions/conclusions.tex) (./chapters/bibliography/references.tex [4])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -941,9 +953,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] [5
-
-] (./main.aux)
+[5] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -955,18 +965,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39111 strings out of 476076
- 895384 string characters out of 5793775
- 2023187 words of memory out of 5000000
+ 39115 strings out of 476076
+ 895418 string characters out of 5793775
+ 2008187 words of memory out of 5000000
  60588 multiletter control sequences out of 15000+600000
- 595602 words of font info for 108 fonts, out of 8000000 for 9000
+ 597758 words of font info for 110 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 104i,20n,104p,1830b,2183s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,19n,104p,1830b,2179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 5664505 bytes).
+Output written on main.pdf (5 pages, 5671211 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

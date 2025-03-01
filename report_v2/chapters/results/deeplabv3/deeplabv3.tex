@@ -9,4 +9,5 @@ every objects like cars, planes, sofas, bicycle...
 The train was conducted using the Adam optimizer and cross entropy loss, batch size of 4 and 10 epochs. Our dataset had 80 images. We
 found the loss to stay constant and high, meaning our model was not learning anything from the training. We figured that the dataset
 that the model was originally trained on was too different from ours and the model could not learn within a feasible number of epochs
-with only 80 images. Our next attempt was to try a simpler segmentation model and train it from the ground up.
+with only 80 images. In addition to that, we latter found out that this model has an auxiliary output that must be used in the training 
+phase. We couldn't figure out how to deal with this auxiliary output, so we decided to attempt using simpler segmentation model, the U-Net.

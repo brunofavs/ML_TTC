@@ -1,33 +1,44 @@
 \subsection{U-net trained from scratch}
-Training the previous model from scratch would require a lot of compute resources and probably be overkill for the desired task. As
-such, we decided to try a simpler model and train it from scratch. Unet is blablabla
+After encountering difficulties with DeepLabV3, we shifted our approach to training a U-Net model from scratch. 
+Given the complexity of implementing U-Net directly from its original paper with our current expertise, we opted 
+instead to find an existing implementation. We adapted one from an \href{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}{online tutorial}\footnote{\url{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}}.
+to suit our needs. 
 
-Good results
+The chosen U-Net model comprised 31 million trainable parameters, utilizing a batch size of 20 and processing 
+images at a resolution of 512x512 pixels. While the training process was notably unstable, as evidenced by Figures 
+\ref{fig:unet_loss_curve} and \ref{fig:unet_dice_curve}, which illustrate the loss and DICE curves, it was far 
+better than DeepLabV3. The model achieved a peak validation DICE score of 78\% at epoch 157. 
+
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_unet_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
+    \inserttrainvalplot{resources/data/train_info_unet_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=U-Net from scratch - Losses}{Train losses}{Validation losses}{north east}
+    \caption{Training and validation loss curves of the U-Net model trained from scratch for 200 epochs.}
     \label{fig:unet_loss_curve}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=157, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
-    \label{fig:unet_loss_curve_smooth}
-\end{figure}
-
-
-\begin{figure}[ht]
-    \centering
-    \inserttrainvalplot{resources/data/train_info_unet_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{north west}
-    \caption{Training and Validation DICE Score Curves}
+    \inserttrainvalplot{resources/data/train_info_unet_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=U-Net from scratch - DICE scores}{Train DICE}{Validation DICE}{north west}
+    \caption{Training and validation DICE score curves of the U-Net model trained from scratch for 200 epochs.}
     \label{fig:unet_dice_curve}
 \end{figure}
 
+
+For enhanced clarity in visualizing the training dynamics, Figures \ref{fig:unet_loss_curve_smooth} and 
+\ref{fig:unet_dice_curve_smooth} present smoothed versions of the loss and DICE curves up to epoch 157. 
+The smoothing was achieved using a Savitzky-Golay filter, which helps in highlighting trends over noise. 
+
+
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=157, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{north west}
-    \caption{Training and Validation DICE Score Curves}
+    \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=157, ymin=0, ymax=2, title=U-Net from scratch - Smoothed losses}{Train losses}{Validation losses}{north east}
+    \caption{Training and validation loss curves of the U-Net model trained from scratch until reaching the maximum DICE score (157 epochs).}
+    \label{fig:unet_loss_curve_smooth}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=157, ymin=0, ymax=1, title=U-Net from scratch - Smoothed DICE scores}{Train DICE}{Validation DICE}{north west}
+    \caption{Training and validation DICE score curves of the U-Net model trained from scratch until reaching the maximum DICE score (157 epochs).}
     \label{fig:unet_dice_curve_smooth}
 \end{figure}
