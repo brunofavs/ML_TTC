@@ -1,7 +1,7 @@
 \subsection{U-net trained from scratch}
 After encountering difficulties with DeepLabV3, we shifted our approach to training a U-Net model from scratch. 
 Given the complexity of implementing U-Net directly from its original paper with our current expertise, we opted 
-instead to find an existing implementation. We adapted one from an \href{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}{online tutorial}\footnote{\url{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}}.
+instead to find an existing implementation. We adapted one from an \href{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}{online tutorial}\footnote{\href{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}{https://medium.com/@fernandopalominocobo/mastering-u-net-a-step-by-step-guide-to-segmentation-from-scratch-with-pytorch-6a17c5916114}}.
 to suit our needs. 
 
 The chosen U-Net model comprised 31 million trainable parameters, utilizing a batch size of 20 and processing 
@@ -36,7 +36,7 @@ The smoothing was achieved using a Savitzky-Golay filter, which helps in highlig
     \label{fig:unet_loss_curve_smooth}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=157, ymin=0, ymax=1, title=U-Net from scratch - Smoothed DICE scores}{Train DICE}{Validation DICE}{north west}
     \caption{Training and validation DICE score curves of the U-Net model trained from scratch until reaching the maximum DICE score (157 epochs).}

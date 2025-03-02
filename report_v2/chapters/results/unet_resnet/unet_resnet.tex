@@ -23,15 +23,15 @@ scratch, as demonstrated in Figures \ref{fig:renet50_frozen_loss_curve} and \ref
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=2, title=U-Net with ResNet50 (frozen) - Losses}{Train losses}{Validation losses}{north east}
+    \caption{Training and validation loss curves of the U-Net model with the pre-trained ResNet50 as backbone (frozen) trained for 200 epochs.}
     \label{fig:renet50_frozen_loss_curve}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
-    \caption{Training and Validation DICE Score Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=U-Net with ResNet50 (frozen) - DICE Scores}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and validation DICE score curves of the U-Net model with the pre-trained ResNet50 as backbone (frozen) trained for 200 epochs.}
     \label{fig:renet50_frozen_dice_curve}
 \end{figure}
 
@@ -41,15 +41,15 @@ for enhanced clarity in visualizing the training dynamics, Figures \ref{fig:rene
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=U-Net with ResNet50 (frozen) - Smoothed losses}{Train losses}{Validation losses}{north east}
+    \caption{Training and validation loss curves of the U-Net model with the pre-trained ResNet50 as backbone (frozen) until reaching the maximum DICE score (142 epochs).}
     \label{fig:renet50_frozen_loss_curve_smooth}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=142, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
-    \caption{Training and Validation DICE Score Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=142, ymin=0, ymax=1, title=U-Net with ResNet50 (frozen) - Smoothed DICE scores}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and validation DICE score curves of the U-Net model with the pre-trained ResNet50 as backbone (frozen) until reaching the maximum DICE score (142 epochs).}
     \label{fig:renet50_frozen_dice_curve_smooth}
 \end{figure}
 
@@ -60,15 +60,15 @@ In the final experiment, we trained all 148 million parameters without freezing,
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=3, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=Loss, xmin=0, xmax=200, ymin=0, ymax=3, title=U-Net with ResNet50 (unfrozen) - Losses}{Train losses}{Validation losses}{north east}
+    \caption{Training and validation loss curves of the U-Net model with the pre-trained ResNet50 as backbone (unfrozen) trained for 200 epochs.}
     \label{fig:renet50_unfrozen_loss_curve}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
-    \caption{Training and Validation DICE Score Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200.csv}{ylabel=DICE Score, xmin=0, xmax=200, ymin=0, ymax=1, title=U-Net with ResNet50 (unfrozen) - DICE scores}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and validation DICE score curves of the U-Net model with the pre-trained ResNet50 as backbone (unfrozen) trained for 200 epochs.}
     \label{fig:renet50_unfrozen_dice_curve}
 \end{figure}
 
@@ -79,15 +79,15 @@ training appears significantly more stable.
 
 \begin{figure}[ht]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=17, ymin=0, ymax=2, title=Training and Validation Loss}{Train losses}{Validation losses}{north east}
-    \caption{Training and Validation Loss Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=17, ymin=0, ymax=2, title=U-Net with ResNet50 (unfrozen) - Smoothed losses}{Train losses}{Validation losses}{north east}
+    \caption{Training and validation loss curves of the U-Net model with the pre-trained ResNet50 as backbone (unfrozen) until reaching the maximum DICE score (17 epochs).}
     \label{fig:renet50_unfrozen_loss_curve_smooth}
 \end{figure}
 
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=17, ymin=0, ymax=1, title=Training and Validation DICE Score}{Train DICE}{Validation DICE}{south east}
-    \caption{Training and Validation DICE Score Curves}
+    \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=17, ymin=0, ymax=1, title=U-Net with ResNet50 (unfrozen) - Smoothed DICE scores}{Train DICE}{Validation DICE}{south east}
+    \caption{Training and validation DICE score curves of the U-Net model with the pre-trained ResNet50 as backbone (unfrozen) until reaching the maximum DICE score (17 epochs).}
     \label{fig:renet50_unfrozen_dice_curve_smooth}
 \end{figure}
