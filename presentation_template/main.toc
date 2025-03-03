@@ -1,3 +1,4 @@
 \beamer@sectionintoc {1}{Introdução}{3}{0}{1}
-\beamer@sectionintoc {2}{Abordagens}{9}{0}{2}
-\beamer@sectionintoc {3}{Conclusion}{13}{0}{3}
+\beamer@sectionintoc {2}{Abordagens}{8}{0}{2}
+\beamer@sectionintoc {3}{Results}{11}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{25}{0}{4}

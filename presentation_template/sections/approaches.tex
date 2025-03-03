@@ -1,82 +1,58 @@
 \section{Abordagens}
-\begin{frame}[c]{DeepLabV3}{Com backbone Resnet50}
+\begin{frame}{Aquisição do dataset}
+  
+  \begin{columns}
 
-    \begin{columns}
-      \column{0.4\textwidth}
-            \begin{itemize}
-                  \item 41M Total Parameters
-                  \item 17M Trainable Parameters
-            \end{itemize}
-      \column{0.5\textwidth}
-            \begin{itemize}
-                  \item Model did not converge
-                  \item Complications with training
-            \end{itemize}
-    \end{columns}
+    \column{0.4\textwidth}
+      \begin{figure}[h]
+          \centering
+          \includegraphics[width=0.9\textwidth]{resources/images/pattern_28.jpg}
+          \captionsetup{labelformat=empty}
+          \caption{Imagem original}
+      \end{figure}
+      % {\Huge\setstretch{1.0} Semântica\par}
 
-    
-  \end{frame}
+    \column{0.4\textwidth}
+      \begin{figure}[h]
+          \centering
+          \includegraphics[width=0.9\textwidth]{resources/images/pattern_28_lines.png}
+          \captionsetup{labelformat=empty}
+          \caption{Anotações no ATOM}
+      \end{figure}
+  \end{columns}
+      \vspace{\fill}
+      \vspace{-0.2cm}
 
 
+    % {\Huge\centering\setstretch{1.0} Panóptica\par}
 
-\begin{frame}[c]{U-net}{Treinada do raíz}
+      \begin{figure}[h]
+          \centering
+          \includegraphics[width=0.36\textwidth]{resources/images/mask_pattern_28.jpg}
+          \captionsetup{labelformat=empty}
+          \caption{Conversão das linhas de contorno para uma máscara}
+      \end{figure}
+\end{frame}
+\begin{frame}[c]{Seleção de modelos}{}
 
-        \begin{columns}
+    \begin{itemize}
+          \item Modelos pre-treinados do PyTorch
+          \begin{itemize}
+            \item DeepLabV3
+            \item Fully Convolutional Network for Semantic Segmentation
+            \item LRASPP
+          \end{itemize}
+          \item U-Net
+    \end{itemize}
 
-          \column{0.5\textwidth}
-            \begin{itemize}
-                  \item 
-                  \item 
-            \end{itemize}
+\end{frame}
 
-          \column{0.5\textwidth}
-            \begin{figure}[h]
-                \centering
-                \includegraphics[width=0.8\textwidth,trim=4 4 4 4,clip]{resources/images/placeholder.png}
-            \end{figure}
-
-        \end{columns}
-    
-  \end{frame}
-
-\begin{frame}[c]{U-net}{Com Resnet50 Backbone}
-
-        \begin{columns}
-
-          \column{0.5\textwidth}
-            \begin{itemize}
-                  \item 
-                  \item 
-            \end{itemize}
-
-          \column{0.5\textwidth}
-            \begin{figure}[h]
-                \centering
-                \includegraphics[width=0.8\textwidth,trim=4 4 4 4,clip]{resources/images/placeholder.png}
-            \end{figure}
-
-        \end{columns}
-    
-  \end{frame}
-
-\begin{frame}{Performance Comparisons}
-
-    \begin{columns}
-      \column{0.4\textwidth}
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=1.1\textwidth]{resources/images/placeholder.png}
-            \captionsetup{labelformat=empty}
-            \caption{Bla}
-        \end{figure}
-
-      \column{0.5\textwidth}
-        \begin{figure}[h]
-            \centering
-            \includegraphics[width=1.1\textwidth]{resources/images/placeholder.png}
-            \captionsetup{labelformat=empty}
-            \caption{Bla}
-        \end{figure}
-    \end{columns}
-    
+\begin{frame}{Setup de treino}
+  \begin{itemize}
+    \item Loss function: Binary cross-entropy loss
+    \item Optimizer: Adam
+    \item Batch size: Máximo possível para a GPU
+    \item 200 epocas por treino
+  \end{itemize}
+  
 \end{frame}

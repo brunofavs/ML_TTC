@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.blg'
-[101] biber:340> INFO - === dom mar  2, 2025, 21:57:36
-[119] Biber.pm:419> INFO - Reading '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bcf'
-[196] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[215] Biber.pm:4419> INFO - Processing section 0
-[228] Biber.pm:4610> INFO - Looking for bibtex file 'chapters/bibliography/references.bib' for section 0
-[230] bibtex.pm:1713> INFO - LaTeX decoding ...
-[262] bibtex.pm:1519> INFO - Found BibTeX data source 'chapters/bibliography/references.bib'
-[394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[394] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[394] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[401] bbl.pm:660> INFO - Writing '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bbl' with encoding 'UTF-8'
-[407] bbl.pm:763> INFO - Output to /home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bbl
+[78] biber:340> INFO - === seg mar  3, 2025, 10:31:21
+[97] Biber.pm:419> INFO - Reading '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bcf'
+[164] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[180] Biber.pm:4419> INFO - Processing section 0
+[193] Biber.pm:4610> INFO - Looking for bibtex file 'chapters/bibliography/references.bib' for section 0
+[195] bibtex.pm:1713> INFO - LaTeX decoding ...
+[222] bibtex.pm:1519> INFO - Found BibTeX data source 'chapters/bibliography/references.bib'
+[335] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[336] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[336] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[336] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[340] bbl.pm:660> INFO - Writing '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bbl' with encoding 'UTF-8'
+[345] bbl.pm:763> INFO - Output to /home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/report_v2/main.bbl
