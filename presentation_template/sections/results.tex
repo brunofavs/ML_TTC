@@ -6,13 +6,13 @@
     \begin{columns}
       \column{0.4\textwidth}
             \begin{itemize}
-                  \item 41M Total Parameters
-                  \item 17M Trainable Parameters
+                  \item 41M de parâmetros
+                  \item 17M treinaveis
             \end{itemize}
       \column{0.5\textwidth}
             \begin{itemize}
-                  \item Model did not converge
-                  \item Complications with training
+                  \item Não houve convergência
+                  \item Complicações com o treino
             \end{itemize}
     \end{columns}
 
@@ -42,23 +42,6 @@
 
 \newcommand{\plotA}{\inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=157, ymin=0, ymax=2, title=U-Net from scratch - Smoothed losses}{Train losses}{Validation losses}{north east}}
 \newcommand{\plotB}{\inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=157, ymin=0, ymax=1, title=U-Net from scratch - Smoothed DICE scores}{Train DICE}{Validation DICE}{north west}}
-
-% \begin{frame}[c]{U-net}{Treinada do raíz}
-
-%     \begin{figure}[ht]
-%         \centering
-%         \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=157, ymin=0, ymax=2, title=U-Net from scratch - Smoothed losses}{Train losses}{Validation losses}{north east}
-%     \end{figure}
-% \end{frame}
-
-% \begin{frame}[c]{U-net}{Treinada do raíz}
-
-%     \begin{figure}[H]
-%         \centering
-%         \inserttrainvalplot{resources/data/train_info_unet_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=157, ymin=0, ymax=1, title=U-Net from scratch - Smoothed DICE scores}{Train DICE}{Validation DICE}{north west}
-%     \end{figure}
-
-% \end{frame}
 
 \begin{frame}[c]{U-net}{Treinada do raíz}
 
@@ -91,23 +74,6 @@
     
   \end{frame}
 
-%   \begin{frame}[c]{U-net}{Com Resnet50 Backbone}
-%     \begin{figure}[ht]
-%         \centering
-%         \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=U-Net with ResNet50 (frozen) - Smoothed losses}{Train losses}{Validation losses}{north east}
-%     \end{figure}
-    
-    
-%   \end{frame}
-
-%   \begin{frame}[c]{U-net}{Com Resnet50 Backbone}
-%     \begin{figure}[ht]
-%         \centering
-%         \inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=142, ymin=0, ymax=1, title=U-Net with ResNet50 (frozen) - Smoothed DICE scores}{Train DICE}{Validation DICE}{south east}
-%     \end{figure}
-    
-    
-%   \end{frame}
 \newcommand{\plotC}{\inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=Loss, xmin=0, xmax=142, ymin=0, ymax=2, title=U-Net with ResNet50 (frozen) - Smoothed losses}{Train losses}{Validation losses}{north east}}
 \newcommand{\plotD}{\inserttrainvalplot{resources/data/train_info_resnet_frozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=142, ymin=0, ymax=1, title=U-Net with ResNet50 (frozen) - Smoothed DICE scores}{Train DICE}{Validation DICE}{south east}}
 
@@ -154,13 +120,6 @@
 
   \end{frame}
 
-%   \begin{frame}[c]{U-net}{Com Resnet50 Backbone}
-%     \begin{figure}[ht]
-%         \centering
-%         \inserttrainvalplot{resources/data/train_info_resnet_unfrozzen_200_smooth.csv}{ylabel=DICE Score, xmin=0, xmax=17, ymin=0, ymax=1, title=U-Net with ResNet50 (unfrozen) - Smoothed DICE scores}{Train DICE}{Validation DICE}{south east}
-%     \end{figure}
-    
-%   \end{frame}
 
 \begin{frame}[c]{Alguns resultados do melhor modelo}
     \begin{figure}[ht]
