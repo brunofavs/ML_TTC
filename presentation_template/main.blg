@@ -1,9 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.blg'
-[98] biber:340> INFO - === qua mar  5, 2025, 09:57:43
-[116] Biber.pm:419> INFO - Reading '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bcf'
-[186] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[203] bbl.pm:660> INFO - Writing '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bbl' with encoding 'UTF-8'
-[203] bbl.pm:763> INFO - Output to /home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bbl
-[204] Biber.pm:131> WARN - The file '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bcf' does not contain any citations!
-[204] Biber.pm:133> INFO - WARNINGS: 1
+[92] biber:340> INFO - === qua mar  5, 2025, 10:15:12
+[109] Biber.pm:419> INFO - Reading '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bcf'
+[180] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[199] bbl.pm:660> INFO - Writing '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bbl' with encoding 'UTF-8'
+[199] bbl.pm:763> INFO - Output to /home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bbl
+[199] Biber.pm:131> WARN - The file '/home/gribeiro/PhD/TTCs/Trabalho/ML_TTC/presentation_template/main.bcf' does not contain any citations!
+[200] Biber.pm:133> INFO - WARNINGS: 1
